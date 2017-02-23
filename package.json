@@ -8,8 +8,13 @@
   },
   "author": "Alexander Gontcharov",
   "license": "ISC",
-  "reposity": {
-  	"type": "git",
-  	"url": ""
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AGontcharov/alexgontcharov"
+  },
+  "dependencies": {
+    "angular": "^1.6.2",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {}
 }
