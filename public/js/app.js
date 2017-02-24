@@ -1,24 +1,25 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.config(function($routeProvider) {
+myApp.config(function($routeProvider, $locationProvider) {
+	$locationProvider.hashPrefix('');
 	$routeProvider
 
 	// route for the home page
 	.when('/', {
 		templateUrl: 'public/view/home.html',
-		controller: 'mainController'
+		controller: 'mainController',
 	})
 
 	// route for the page 1
-	.when('/page1', {
-		templateUrl: 'public/view/page1.html',
+	.when('/projects', {
+		templateUrl: 'public/view/projects.html',
 		controller: 'page1Controller'
 	})
 
 	// route for the page 2
-	.when('/page2', {
-		templateUrl: 'public/view/page2.html',
-		controller: 'page2Controller'
+	.when('/resume', {
+		templateUrl: 'public/view/resume.html',
+		controller: 'page2Controller',
 	})
 
 	// route for the page 3
@@ -30,21 +31,16 @@ myApp.config(function($routeProvider) {
 	.otherwise({
 		redirectTo: '/404'
 	});
-
 });
 
-myApp.controller('mainController', function($scope) {
-	console.log("hi main");
+myApp.controller('mainController', function($scope, $location) {
 });
 
 myApp.controller('page1Controller', function($scope) {
-	console.log("hi page1");
 });
 
 myApp.controller('page2Controller', function($scope) {
-	console.log("hi page2");
 });
 
 myApp.controller('page3Controller', function($scope) {
-	console.log("hi page2");
 });
