@@ -1,46 +1,50 @@
-var app = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute']);
 
-app.config(function($routeProvider) {
+myApp.config(function($routeProvider) {
 	$routeProvider
 
 	// route for the home page
 	.when('/', {
-		templateUrl : 'view/home.html',
-		controller : 'mainController'
+		templateUrl: 'public/view/home.html',
+		controller: 'mainController'
 	})
 
 	// route for the page 1
 	.when('/page1', {
-		templateUrl: 'view/page1.html',
+		templateUrl: 'public/view/page1.html',
 		controller: 'page1Controller'
 	})
 
 	// route for the page 2
 	.when('/page2', {
-		templateUrl: 'view/page2.html',
+		templateUrl: 'public/view/page2.html',
 		controller: 'page2Controller'
 	})
 
 	// route for the page 3
 	.when('/page3', {
-		templateUrl: 'view/page3.html',
+		templateUrl: 'public/view/page3.html',
 		controller: 'page3Controller'
+	})
+
+	.otherwise({
+		redirectTo: '/404'
 	});
 
 });
 
-app.controller('mainController', function($scope) {
-
+myApp.controller('mainController', function($scope) {
+	console.log("hi main");
 });
 
-app.controller('page1Controller', function($scope) {
-
+myApp.controller('page1Controller', function($scope) {
+	console.log("hi page1");
 });
 
-app.controller('page2Controller', function($scope) {
-
+myApp.controller('page2Controller', function($scope) {
+	console.log("hi page2");
 });
 
-app.controller('page3Controller', function($scope) {
-
+myApp.controller('page3Controller', function($scope) {
+	console.log("hi page2");
 });

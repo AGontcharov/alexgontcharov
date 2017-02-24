@@ -4,7 +4,7 @@
   "description": "My own personal website",
   "main": "app.js",
   "scripts": {
-    "start": "http-server -a localhost -o",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alexander Gontcharov",
