@@ -1,10 +1,16 @@
 .home-description {
+	color: #54697E;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
 }
 
+.home-description h3 {
+	color: black;
+}
+
 .row h3 {
+	color: #54697E;
 	text-align: center;
 }
 
@@ -15,6 +21,7 @@
 
 .image-container {
 	padding-top: 50px;
+	/*padding-top: 25%;*/
 	padding-left: 50px;
 	padding-bottom: 50px;
 }
@@ -22,7 +29,7 @@
 .image-container img {
 	width: 100%;
 	max-height: 100%;
-	max-width: 500px;
+	max-width: 400px;
 
 	/* Center the image */
 	display: block;
@@ -30,9 +37,14 @@
 	margin-right: auto;
 }
 
-.description-container {
+.about-description {
 	/*20px less than image-container*/
-	padding-top: 30px;
+	max-width: 80%;
+	margin: 0 auto;
 	padding-bottom: 50px;
 	padding-right: 50px;
+}
+
+p {
+	font-size: 15px;
 }

@@ -1,8 +1,15 @@
 .projects-description {
+	color: #54697E;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
+.projects-description h3 {
+	line-height: 10%;
+}
+
+/*Links have more in built propertis effects*/
 
 .projects-description a {
 	color: #E18A07;
@@ -28,7 +35,8 @@
 }
 
 .description-container {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 	text-align: justify;
 }
