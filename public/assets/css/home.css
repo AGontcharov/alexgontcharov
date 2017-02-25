@@ -1,9 +1,7 @@
-body {
-    background: #EDEFF1;
-}
-
-.navbar { 
-	margin-bottom:0; 
+.home-description {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
 }
 
 .row h3 {
@@ -11,8 +9,8 @@ body {
 }
 
 .cover-container img {
-	max-width: 100%;
 	max-height: 100%;
+	max-width: 100%;
 }
 
 .image-container {
@@ -22,8 +20,9 @@ body {
 }
 
 .image-container img {
-	max-width: 100%;
+	width: 100%;
 	max-height: 100%;
+	max-width: 500px;
 
 	/* Center the image */
 	display: block;
@@ -34,11 +33,6 @@ body {
 .description-container {
 	/*20px less than image-container*/
 	padding-top: 30px;
-	padding-left: 50px;
 	padding-bottom: 50px;
+	padding-right: 50px;
 }
-
-/* probably don't need
-.img-circle {
-	border-radius: 50%;
-}*/
