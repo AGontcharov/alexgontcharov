@@ -23,8 +23,8 @@ myApp.config(function($routeProvider, $locationProvider) {
 	})
 
 	// route for the page 3
-	.when('/page3', {
-		templateUrl: 'public/view/page3.html',
+	.when('/about', {
+		templateUrl: 'public/view/about.html',
 		controller: 'page3Controller'
 	})
 
