@@ -9,6 +9,11 @@
 	color: black;
 }
 
+/* Somewhere margin was set to 15px and caused horizontal scrolling */
+.row {
+	margin: 0;
+}
+
 .row h3 {
 	color: #54697E;
 	text-align: center;
@@ -21,7 +26,6 @@
 
 .image-container {
 	padding-top: 50px;
-	/*padding-top: 25%;*/
 	padding-left: 50px;
 	padding-bottom: 50px;
 }
@@ -38,11 +42,11 @@
 }
 
 .about-description {
-	/*20px less than image-container*/
 	max-width: 80%;
 	margin: 0 auto;
 	padding-bottom: 50px;
-	padding-right: 50px;
+	/*padding-right: 50px;*/
+	/*margin-right: 50px;*/
 }
 
 p {
