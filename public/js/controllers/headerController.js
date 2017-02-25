@@ -1,6 +1,6 @@
-//var myApp = angular.module('myApp',[]);
+var test = angular.module('myApp');
 
-myApp.controller('headerController', function($scope, $location) 
+test.controller('headerController', function($scope, $location) 
 { 
     $scope.isActive = function(viewLocation) { 
         return viewLocation === $location.path();
