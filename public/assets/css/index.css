@@ -2,6 +2,14 @@ body {
     background: #EDEFF1;
 }
 
+p {
+	font-size: 15px;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
 .navbar { 
 	margin-bottom: 0; 
 }
