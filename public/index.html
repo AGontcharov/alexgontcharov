@@ -3,29 +3,40 @@
 
 <head>
 	<meta charset="utf-8">
+	
 	<!-- Bootstrap -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-
-	<link href="public/assets/css/home.css" rel="stylesheet" type="text/css">
-	<link href="public/assets/css/footer.css" rel="stylesheet" type="text/css">
-
-	<!-- load angular -->
+	<!-- Angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
 	<script src="public/js/app.js"></script>
+
+	<!-- Stylesheets -->
+	<link href="public/assets/css/home.css" rel="stylesheet" type="text/css">
+	<link href="public/assets/css/footer.css" rel="stylesheet" type="text/css">
+
+	<!-- Controllers --> 
+	<script> src="public/js/controllers/headerController.js"</script>
 </head>
 
 <body>
 	<!-- Navbar -->
+	<!-- <nav class="navbar navbar-inverse" ng-controller="headerController"> -->
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#"> AGontcharov</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li clas="active"><a href="#">Home</a></li>
+				<!-- <li ng-class="{active: isActive('/')}"><a href="#">Home</a></li>
+				<li ng-class="{active: isActive('/projects')}"> <a href="#projects">Projects</a></li>
+				<li ng-class="{active: isActive('/resume')}"><a href="#resume">Resume</a></li>
+				<li ng-class="{active: isActive('/page3')}"><a href="#page3">Page 3</a></li>
+			-->
+
+				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#resume">Resume</a></li>
 				<li><a href="#page3">Page 3</a></li>
@@ -62,7 +73,7 @@
 	                    </li>
 	                </ul>
 					<ul class="social">
-			            <li> <a href="https://www.facebook.com/alexander.gontcharov"> <i class="fa fa-facebook">	</i> </a> </li>
+			            <li> <a href="https://www.facebook.com/alexander.gontcharov"> <i id="facebook" class="fa fa-facebook">	</i> </a> </li>
 			            <li> <a href="#"> <i id="twitter" class="fa fa-twitter">   	</i> </a> </li>
 			            <li> <a href="#"> <i id="skype" class="fa fa-skype">	</i> </a> </li>
 			            <li> <a href="#"> <i id="linkedin" class="fa fa-linkedin">   </i> </a> </li>

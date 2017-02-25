@@ -13,13 +13,13 @@ myApp.config(function($routeProvider, $locationProvider) {
 	// route for the page 1
 	.when('/projects', {
 		templateUrl: 'public/view/projects.html',
-		controller: 'page1Controller'
+		controller: 'projectsController'
 	})
 
 	// route for the page 2
 	.when('/resume', {
 		templateUrl: 'public/view/resume.html',
-		controller: 'page2Controller',
+		controller: 'resumeController',
 	})
 
 	// route for the page 3
@@ -33,13 +33,13 @@ myApp.config(function($routeProvider, $locationProvider) {
 	});
 });
 
-myApp.controller('mainController', function($scope, $location) {
+myApp.controller('mainController', function($scope) {
 });
 
-myApp.controller('page1Controller', function($scope) {
+myApp.controller('projectsController', function($scope) {
 });
 
-myApp.controller('page2Controller', function($scope) {
+myApp.controller('resumeController', function($scope) {
 });
 
 myApp.controller('page3Controller', function($scope) {
