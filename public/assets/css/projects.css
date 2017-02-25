@@ -1,5 +1,11 @@
 .projects-description {
 	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.projects-description a {
+	color: #E18A07;
 }
 
 .project-container {
@@ -7,13 +13,22 @@
 }
 
 .project-container img {
-	max-width: 100%;
-	max-height: 100%;
+	border-radius: 25%;
+}
 
+.row a {
+	color: #54697E;
+}
+
+.project-container img {
+	max-height: 100%;
+	max-width: 100%;
 	padding-left: 20px;
-	padding-right: 20px;*/
+	padding-right: 20px;
 }
 
 .description-container {
-	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
 }

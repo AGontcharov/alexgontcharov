@@ -16,7 +16,7 @@
 	position: relative;
 	width: 100%;
 	border-bottom: 1px solid #CCCCCC;
-	border-top: 1px solid #DDDDDD;
+	/*border-top: 1px solid #DDDDDD;*/
 }
 
 .footer p {
@@ -114,7 +114,7 @@
 	text-align: center;
 	width: 36px;
 
-	/*webkite is Chrome, moz is Mozilla, ms is IE, and o is Opera*/
+	/*webkite is Chrome & Safari, moz is Mozilla, ms is IE, and o is Opera*/
 	transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
