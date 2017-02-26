@@ -1,29 +1,11 @@
- .page3-description {
+ .about-description {
 	text-align: center;
 }
 
-.parent {
-	display: table;
-    table-layout: fixed;
+.about-description h1 {
+	color: #54697E;
 }
 
-.child-left {
-	display:table-cell;
-    vertical-align:middle;
-    float: none;
+.about-description h3 {
+	color: #337ab8;
 }
-
-.child-right {
-	display: table-cell;
-	float: none;
-}
-
-.child-left img {
-	width: 100%;
-	max-height: 100%;
-	max-width: 400px;
-
-	display: block;
-	margin: 0 auto;
-}
-
