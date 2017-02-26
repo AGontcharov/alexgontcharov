@@ -18,12 +18,16 @@
 	color: #E18A07;
 }
 
+.all-projects h3 {
+	color: #337ab8;
+}
+
 .project-container {
 	text-align: center;
 }
 
 .project-container img {
-	border-radius: 25%;
+	/*border-radius: 25%;*/
 }
 
 .project-container img {
@@ -34,8 +38,11 @@
 }
 
 .description-container {
-	padding-top: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
+	/*padding-top: 5%;
+	padding-bottom: 5%;*/
+	padding-left: 5%;
+	padding-right: 5%;
+
+	white-space: pre-wrap;
 	text-align: justify;
 }
