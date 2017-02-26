@@ -10,6 +10,11 @@ h1, h3 {
 	text-align: center;
 }
 
+/* Somewhere margin was set to 15px and caused horizontal scrolling */
+.row {
+	margin: 0;
+}
+
 .navbar { 
 	margin-bottom: 0; 
 }

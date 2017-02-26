@@ -5,11 +5,14 @@
 	padding-bottom: 50px;
 }
 
+.projects-description h1 {
+}
+
 .projects-description h3 {
 	line-height: 10%;
 }
 
-/*Links have more in built propertis effects*/
+/*Links have more in built properties effects*/
 
 .projects-description a {
 	color: #E18A07;
@@ -21,10 +24,6 @@
 
 .project-container img {
 	border-radius: 25%;
-}
-
-.row a {
-	color: #54697E;
 }
 
 .project-container img {
