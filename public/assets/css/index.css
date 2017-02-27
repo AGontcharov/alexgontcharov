@@ -1,14 +1,15 @@
 body {
-    /*background: #EDEFF1;*/
     background: white;
 }
 
 p {
 	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h3 {
 	text-align: center;
+
 }
 
 /* Somewhere margin was set to 15px and caused horizontal scrolling */
@@ -18,4 +19,8 @@ h1, h3 {
 
 .navbar { 
 	margin-bottom: 0; 
+}
+
+.navbar-brand, .navbar a li {
+	font-size: 16px;
 }
