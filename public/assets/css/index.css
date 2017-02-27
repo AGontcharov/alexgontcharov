@@ -12,13 +12,20 @@ h1, h3 {
 
 }
 
+.page-header {
+	/*background: #EDEFF1;*/
+	background: white;
+	/*margin 0;*/
+}
+
 /* Somewhere margin was set to 15px and caused horizontal scrolling */
 .row {
 	margin: 0;
 }
 
 .navbar { 
-	margin-bottom: 0; 
+	margin: 0;
+	border: 0;
 }
 
 .navbar-brand, .navbar a li {

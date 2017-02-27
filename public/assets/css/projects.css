@@ -13,11 +13,15 @@
 
 /*Links have more in built properties effects*/
 .projects-description a {
-	color: #E18A07;
+	/*color: #E18A07;*/
+	color: #337ab8;
 }
 
 .all-projects h3 {
-	color: #337ab8;
+	/*color: #337ab8;*/
+	color: #54697E;
+	font-weight: bold;
+
 }
 
 .project-image {
