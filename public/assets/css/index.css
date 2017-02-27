@@ -28,7 +28,10 @@ h1, h3 {
 	border: 0;
 }
 
-.navbar-brand,
-.nav .navbar-nav a, li {
+.navbar-header a {
+	font-size: 23px;
+}
+
+.nav.navbar-nav a {
 	font-size: 16px;
 }
