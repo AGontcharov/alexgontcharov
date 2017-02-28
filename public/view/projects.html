@@ -25,7 +25,9 @@
 		</div>
 		<div class="description-parent">
 			<div class="description-container">
-				<p>Wildebeest chess is a chess variant orginaly created by R. Wayne Schmittberger where the board is 11x10 squares. The board consists of the standard chess pieces along with a couple new pieces whose moveset, after effects and rules can be found in the table below. In addition, there are a few special squares on the board which are detailed further down below in another table. </p>
+				<p><a href="https://en.wikipedia.org/wiki/Wildebeest_Chess">Wildebeest chess</a> is a chess variant orginaly created by R. Wayne Schmittberger where the board is 11x10 squares. The board consists of the standard chess pieces along with a couple new pieces whose moveset, after effects and rules can be found in the table in the README. In addition, there are a few special squares on the board which are detailed further down below in another table. </p>
+
+				<p>The Wildebeest 2 Player Chess AI generates all the possible states (possible moves) of a board for a player as his next move. All the states produce adhere to the Wildebeest chess rules and are then added to a list. From this list all the states are given a score based on a heuristic function that is applied to them. A state with the highest score is chosen as the succesfor as the player's next move. The Wildebeest Chess AI by default has depth set to 2 and therefore will look into the future 2 moves ahead producing better result but at a computational cost. Scores are only applied to resulting state, therfore at depth 3 only boards three moves ahead will have a score applied to them. In addition, the Wildebeest Chess AI is also based on the <a href="http://will.thimbleby.net/algorithms/doku.php?id=minimax_search_with_alpha-beta_pruning">Minimax Search with Alpha-beta pruning. </a></p>
 			</div>
 		</div>
 	</div>
