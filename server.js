@@ -10,5 +10,5 @@ app.get('*', function (req, res) {
 
 //app is now fully initialized, listen on port 3000 and await a request from the client.
 app.listen(3000, function() {
- 	console.log("Now listening on 3000.");
+	console.log("Now listening on 3000.");
 });
