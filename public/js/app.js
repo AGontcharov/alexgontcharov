@@ -4,28 +4,28 @@ myApp.config(function($routeProvider, $locationProvider) {
 	//$locationProvider.hashPrefix('');
 	$routeProvider
 
-	// route for the home page
+	// route for home page
 	.when('/', {
 		templateUrl: '/view/home.html',
 		controller: 'mainController',
 	})
 
-	// route for the page 1
+	// route for projects page
 	.when('/projects', {
 		templateUrl: '/view/projects.html',
 		controller: 'projectsController'
 	})
 
-	// route for the page 2
+	// route for resume page
 	.when('/resume', {
 		templateUrl: '/view/resume.html',
 		controller: 'resumeController',
 	})
 
-	// route for the page 3
+	// route for about me page
 	.when('/about', {
 		templateUrl: '/view/about.html',
-		controller: 'page3Controller'
+		controller: 'aboutController'
 	})
 
 	.otherwise({
@@ -36,14 +36,15 @@ myApp.config(function($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode(true);
 });
 
+
 myApp.controller('mainController', function($scope) {
 });
 
 myApp.controller('projectsController', function($scope) {
 });
 
-myApp.controller('resumeController', function($scope) {
-});
+myApp.controller('resumeController', ['$scope', function($scope) {
+}]);
 
-myApp.controller('page3Controller', function($scope) {
+myApp.controller('aboutController', function($scope) {
 });
