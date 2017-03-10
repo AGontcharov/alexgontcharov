@@ -7,6 +7,6 @@ test.controller('headerController', ['$scope', '$window', '$location', function(
     };
 
     $scope.pdfViewer = function() {
-    	$window.open("assets/resume.pdf");
+    	$window.open("/resume.pdf");
     };
 }]);
