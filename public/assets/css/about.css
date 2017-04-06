@@ -21,7 +21,7 @@
 
 .child-left {
 	display:table-cell;
-    vertical-align:middle;
+    vertical-align: middle;
     float: none;
 }
 
@@ -38,7 +38,12 @@
 
 .child-right {
 	display: table-cell;
+	vertical-align: middle;
 	float: none;
+}
+
+.child-right p {
+	text-align: justify;
 }
 
 .description {
