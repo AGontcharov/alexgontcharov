@@ -5,17 +5,17 @@
 
 <div class ="all-projects">
 	<div class="row">
-			<h3> Dialog System Compiler </h3>
-			<div class="project-image">
-				<a href="https://github.com/AGontcharov/Dialog-System-Compiler"> <img src="/assets/img/dialogcOverview.png"> </a>
-			</div>
-			<div class="description-parent">
-				<div class="description-container">
-					<p>Dialog System Compiler (Dialogc) is an IDE compiler which takes a simplified pre-determined language and spits out an executable Java GUI code which can be run directly in the IDE or as a stand alone program. Dialogc comes with 2 compile mode: IDE Compiler and Lex/Yacc Compiler. The IDE Compiler is the in built default compiler for Dialogc which is based on a finite state machine implemented in C. On the other hand, the Lex/Yacc Compiler is based on tokens provided by the Lexixal Analyzer Genetaor and the grammar rules defined in Yacc (Yet Another Compiler-Compiler). In addition, the Lex/Yacc Compiler can be run as a stand alone program (yadc) also spitting out an executable Java GUI code. </p>
+		<h3> Dialog System Compiler </h3>
+		<div class="project-image">
+			<a href="https://github.com/AGontcharov/Dialog-System-Compiler"> <img src="/assets/img/dialogcOverview.png"> </a>
+		</div>
+		<div class="description-parent">
+			<div class="description-container">
+				<p>Dialog System Compiler (Dialogc) is an IDE compiler which takes a simplified pre-determined language and spits out an executable Java GUI code which can be run directly in the IDE or as a stand alone program. Dialogc comes with 2 compile mode: IDE Compiler and Lex/Yacc Compiler. The IDE Compiler is the in built default compiler for Dialogc which is based on a finite state machine implemented in C. On the other hand, the Lex/Yacc Compiler is based on tokens provided by the Lexixal Analyzer Genetaor and the grammar rules defined in Yacc (Yet Another Compiler-Compiler). In addition, the Lex/Yacc Compiler can be run as a stand alone program (yadc) also spitting out an executable Java GUI code. </p>
 
-					<p>The GUI for Dialogc is fully implemented in Java, under the Swing library and is connected straight to the IDE Compiler through the Java Native Interface (JNI). Furthermore, a bash script is provided which will guide a user through the installation of the Dialog System Compiler and install in a directory of their choice. The newly compile Java GUI code also has hooks attached for action listeners which need to be provided by the user after the initial compile as a class on its own. </p>
-				</div>
+				<p>The GUI for Dialogc is fully implemented in Java, under the Swing library and is connected straight to the IDE Compiler through the Java Native Interface (JNI). Furthermore, a bash script is provided which will guide a user through the installation of the Dialog System Compiler and install in a directory of their choice. The newly compile Java GUI code also has hooks attached for action listeners which need to be provided by the user after the initial compile as a class on its own. </p>
 			</div>
+		</div>
 	</div>
 
 	<div class="row">
@@ -48,11 +48,11 @@
 	<div class="row">
 		<h3> Genetic Algorithms </h3>
 		<div class="project-image">
-			<a href="#"> <img src="https://nnpdf.hepforge.org/images/GA.png"> </a>
+			<a href="https://github.com/AGontcharov/Genetic-Algorithm"> <img src="https://nnpdf.hepforge.org/images/GA.png"> </a>
 		</div>
 		<div class="description-parent">
 			<div class="description-container">
-				<p>Maecenas pharetra ac enim placerat convallis. Praesent molestie orci pretium, elementum nibh quis, lacinia libero. Duis mollis mollis dui nec molestie. Nunc pulvinar, velit ut maximus condimentum, felis lacus porta elit, eu laoreet neque enim non diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ornare quam id elit rutrum scelerisque vitae vitae nunc. Nam sollicitudin vehicula egestas. In viverra est in dolor luctus ultrices. Sed id laoreet lectus. Aliquam pellentesque, mi eu dapibus convallis, purus est pharetra tortor, non rutrum felis eros vulputate diam. Sed eget arcu faucibus sem viverra fringilla sit amet ac magna. Mauris in elementum velit, in finibus nibh. Fusce tempus aliquet quam, ut volutpat quam ullamcorper congue. </p>
+				<p>Implementation of a genetic algorithm written in pure C that optimizes arbitrary bit strings of sizes 8. Given a random starting population of octane bit strings a fitness function which evaluates the number of set bits is applied to determine the fitness value of each bit string (individual). Two candidates are then chosen through fitness proportionate selection (roulette wheel selection) and single point crossover is performed to produce offsprings from those two candidates. This process is repeated until the children generation matches that of the parent generation. In addition, each offspring will have a 1 / bit string length chance to be selected for mutation where a random bit will be toggled. The simulation is ran until the maximum generation is reached or a solution based on the fitness function has been found i.e. if the bit strings are of length of 16 then the solution is 16. </p>
 			</div>
 		</div>
 	</div>

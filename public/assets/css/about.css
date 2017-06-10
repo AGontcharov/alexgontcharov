@@ -2,7 +2,7 @@
 	text-align: center;
 }
 
-.about-description h1 {
+.about-description h1, h2 {
 	color: #54697E;
 }
 
@@ -42,19 +42,20 @@
 	float: none;
 }
 
-.child-right p {
-	text-align: justify;
-}
-
-.description {
+.profile-description {
 	margin: 0 auto;
 }
 
-.description h3 {
-	color: #54697E;
-	font-weight: bold;
+.profile-description p {
+	text-align: justify;
 }
 
+/*.profile-description h3 {
+	color: #54697E;
+	font-weight: bold;
+}*/
+
+/* Weird behaviour here figure out */
 .scuba-description-parent {
 	text-align: center;
 }
@@ -81,6 +82,28 @@
 	padding: 10px 0 15px 0;
 	border-radius: 10%;
 
-	display: block;;
+	display: block;
+	margin: 0 auto;
+}
+
+.hobbies-description-parent {
+	text-align: center;
+}
+
+.hobbies-description {
+	padding: 0 30px;
+	display: inline-block;
+}
+
+.hobbies-description p {
+	width: 100%;
+	max-width: 1100px;
+	text-align: justify;
+}
+
+.thumbnail {
+	width: 100%;
+
+	display: block;
 	margin: 0 auto;
 }
