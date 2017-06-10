@@ -2,12 +2,8 @@
 	text-align: center;
 }
 
-.about-description h1, .about-description h2 {
+.about-description h1 {
 	color: #54697E;
-}
-
-.about-description h3 {
-	color: #337ab8;
 }
 
 .parent {
@@ -49,11 +45,6 @@
 .profile-description p {
 	text-align: justify;
 }
-
-/*.profile-description h3 {
-	color: #54697E;
-	font-weight: bold;
-}*/
 
 /* Weird behaviour here figure out */
 .scuba-description-parent {

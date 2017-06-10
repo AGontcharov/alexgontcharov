@@ -3,6 +3,10 @@
 	position: relative;
 }
 
+.home-description img {
+	width: 100%;
+}
+
 /* Name of the animation. */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
@@ -47,8 +51,4 @@
 
 #repeat {
 	animation-delay: 5s;
-}
-
-.home-description img {
-	width: 100%;
 }
