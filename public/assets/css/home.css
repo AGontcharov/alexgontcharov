@@ -1,14 +1,54 @@
 .home-description {
-	color: #54697E;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	text-align: center;
+	position: relative;
 }
 
-.home-description h1 {
-	color: #54697E;
+/* Name of the animation. */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.animation-wrapper {
+	position: absolute;
+	top: 15%;
+	left: 15%;
 }
 
-.home-description h3 {
-	color: #337ab8;
+.animation-wrapper p {
+	color: white;
+	display: inline;
+	font-size: 3.9vw;
+	opacity: 0;
+
+	/* Animation */
+	animation-name: fadeIn;
+
+	/* Slow start. */
+	transition-timing-function: ease-in;
+	animation-duration: 2s;
+
+	/* Keep the animation at the last keyframe. */
+	animation-fill-mode: forwards;
+}
+
+#eat {
+	animation-delay: 1s;
+}
+
+#sleep {
+	animation-delay: 2s;
+}
+
+#code {
+	animation-delay: 3s;
+}
+
+#scuba {
+	animation-delay: 4s;
+}
+
+#repeat {
+	animation-delay: 5s;
+}
+
+.home-description img {
+	width: 100%;
 }

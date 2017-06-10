@@ -1,5 +1,6 @@
 body {
     background: white;
+    /*background: #EDEFF1;*/
 }
 
 p {
@@ -9,12 +10,10 @@ p {
 
 h1, h2, h3 {
 	text-align: center;
-
 }
 
 .page-header {
 	background: white;
-	/*margin 0;*/
 }
 
 /* Somewhere margin was set to 15px and caused horizontal scrolling */
@@ -22,6 +21,7 @@ h1, h2, h3 {
 	margin: 0;
 }
 
+/* navbar adds space below without margin 0. */
 .navbar { 
 	margin: 0;
 	border: 0;
