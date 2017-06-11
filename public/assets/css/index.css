@@ -11,6 +11,23 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+
+    /* There is padding on the top of the navbar which skews the line height. */
+    padding-top: 0;
+}
+
+.navbar-brand {
+	font-size: 20px;
+}
+
+/*.navbar-nav li a {
+	font-size: 16px;
+}*/
+
 /*.page-header {
 	margin-top: 0;
 }
