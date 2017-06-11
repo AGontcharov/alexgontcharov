@@ -1,6 +1,7 @@
 .projects-description {
 	color: #54697E;
 	text-align: center;
+	padding-top: 10px;
 }
 
 .projects-description h3 {
@@ -14,10 +15,10 @@
 }
 
 .all-projects h3 {
-	/*color: #337ab8;*/
 	color: #54697E;
 	font-weight: bold;
-
+	text-transform: uppercase;
+	font-size: 20px;
 }
 
 .project-image {
