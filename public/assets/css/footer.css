@@ -17,8 +17,6 @@
 	width: 100%;
 	border-bottom: 1px solid #CCCCCC;
 	border-top: 1px solid #DDDDDD;
-
-	/*margin-top: 30px;*/
 }
 
 .footer p {
@@ -137,22 +135,35 @@
 	color: #EDEFF1;
 }
 
-.social li:hover {
-	border: 2px solid #2c3e50;
-	background: #2c3e50;
-}
-
 .social li a i {
 	font-size: 16px;
 	color: #EDEFF1 !important;
 }
 
-#twitter, #linkedin, #github {
-	margin: 0 0 0 8px;
+/* Colors of the companies on hover. */
+#facebook:hover {
+	border: 2px solid #3b5998;
+	background: #3b5998;
 }
 
-#facebook, #skype {
-	margin: 0 1px 0 0;
+#twitter:hover {
+	border: 2px solid #00aced;
+	background: #00aced;
+}
+
+#skype:hover {
+	border: 2px solid #12A5F4;
+	background: #12A5F4;
+}
+
+#linkedin:hover {
+	border: 2px solid #0077B5;
+	background: #0077B5;
+}
+
+#github:hover {
+	border: 2px solid black;
+	background: black;
 }
 
 .footer-bottom {
