@@ -1,4 +1,4 @@
- .about-description {
+.about-description {
 	text-align: center;
 }
 
@@ -6,41 +6,69 @@
 	color: #54697E;
 }
 
-.parent {
-	padding: 0 30px;
+@media (max-width: 768px) {
+	.child-left img {
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+		padding: 10px 0 15px 0;
+
+		display: block;
+		margin: 0 auto;
+	}
+
+	.child-right {
+		padding: 0 30px;
+	}
+
+	.profile-description-parent {
+		text-align: center;
+	}
+
+	.profile-description {
+		display: inline-block;
+	}
+
+	.profile-description p {
+		max-width: 1100px;
+	}
 }
 
-.table {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 30px 0;
+@media (min-width: 768px) {
+	.parent {
+		padding: 0 30px;
+	}
 
-	display: table;
-	table-layout: fixed;
+	.table {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 30px 0;
 
-	/*background: pink;*/
-}
+		display: table;
+		table-layout: fixed;
+	}
 
-.child-left, .child-right {
-	display:table-cell;
-	vertical-align: middle;
-	float: none;
-}
+	.child-left, .child-right {
+		display:table-cell;
+		vertical-align: middle;
+		float: none;
+	}
 
-/* Table cells have in built padding. */
-.child-right {
-	padding-right: 0;
-}
+	/* Table cells have in built padding. */
+	.child-right {
+		padding-right: 0;
+	}
 
-.child-left {
-	padding-left: 0;
-}
+	.child-left {
+		padding-left: 0;
+	}
 
-/* Don't need to horizontally center img in table cell. */
-.child-left img {
-	width: 100%;
-	max-height: 100%;
-	max-width: 400px;
+	/* Don't need to horizontally center img in table cell. */
+	.child-left img {
+		width: 100%;
+		max-height: 100%;
+		max-width: 400px;
+	}
 }
 
 .profile-description p {
