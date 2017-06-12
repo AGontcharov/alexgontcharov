@@ -44,6 +44,23 @@
 .description-container p {
 	width: 100%;
 	max-width: 1100px;
-	white-space: pre-wrap;
+	text-align: justify;
+}
+
+
+
+/* Testing justify text for FireFox. */
+.test-parent {
+	padding: 30px;
+}
+
+.test {
+	width: 100%;
+	max-width: 1100px;
+	background: red;
+	margin: 0 auto;
+}
+
+.test p {
 	text-align: justify;
 }
