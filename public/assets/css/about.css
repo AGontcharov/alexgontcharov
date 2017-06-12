@@ -6,12 +6,14 @@
 	color: #54697E;
 }
 
+/* Stack the profile picture on top on screen width < 768px . */
 @media (max-width: 768px) {
 	.child-left img {
 		width: 100%;
 		max-width: 400px;
 		height: auto;
-		padding: 10px 0 15px 0;
+		border-radius: 50%;
+		padding: 10px 0 20px 0;
 
 		display: block;
 		margin: 0 auto;
@@ -34,6 +36,7 @@
 	}
 }
 
+/* Shift the profile picture to the side of the description on screen width > 768px. */
 @media (min-width: 768px) {
 	.parent {
 		padding: 0 30px;
@@ -68,6 +71,7 @@
 		width: 100%;
 		max-height: 100%;
 		max-width: 400px;
+		border-radius: 50%;
 	}
 }
 
@@ -78,17 +82,15 @@
 
 /* Need a wrapper to center a div horizontally */
 .scuba-description-parent {
-	text-align: center;
+	padding: 0 30px;
 }
 
 .scuba-description {
-	padding: 0 30px;
-	display: inline-block;
+	width: 100%;
+	max-width: 1100px;
 }
 
 .scuba-description p {
-	width: 100%;
-	max-width: 1100px;
 	text-align: justify;
 }
 
@@ -104,17 +106,15 @@
 }
 
 /*.hobbies-description-parent {
-	text-align: center;
+	padding: 0 30px;
 }
 
 .hobbies-description {
-	padding: 0 30px;
-	display: inline-block;
+	width: 100%;
+	max-width: 1100px;
 }
 
 .hobbies-description p {
-	width: 100%;
-	max-width: 1100px;
 	text-align: justify;
 }
 
