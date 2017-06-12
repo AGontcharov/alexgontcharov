@@ -32,35 +32,17 @@
 }
 
 .description-parent {
-	text-align: center;
+	/*text-align: center;*/
+	padding: 30px;
 }
 
+/* Width must be specified to center a div with margin: 0 auto; */
 .description-container {
-	padding: 30px;
-	display: inline-block;
-}
-
-/* Text is not justified for moz. */
-.description-container p {
 	width: 100%;
 	max-width: 1100px;
-	text-align: justify;
-}
-
-
-
-/* Testing justify text for FireFox. */
-.test-parent {
-	padding: 30px;
-}
-
-.test {
-	width: 100%;
-	max-width: 1100px;
-	background: red;
 	margin: 0 auto;
 }
 
-.test p {
+.description-container p {
 	text-align: justify;
 }
