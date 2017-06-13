@@ -50,13 +50,13 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li ng-class="{active: isActive('/')}"><a data-toggle="collapse" data-target=".navbar-collapse" href="/">Home</a></li>
-					<li ng-class="{active: isActive('/projects')}"> <a data-toggle="collapse" data-target=".navbar-collapse" href="projects">Projects</a></li>
+					<li ng-class="{active: isActive('/')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="/">Home</a></li>
+					<li ng-class="{active: isActive('/projects')}"> <a data-toggle="collapse" data-target=".navbar-collapse.in" href="projects">Projects</a></li>
 					<!-- <li ng-class="{active: isActive('/resume')}"><a href="resume"> Resume </a></li> -->
 
 					<!-- Cant put div around or in li -->
-					<li><a data-toggle="collapse" data-target=".navbar-collapse" href="" ng-click="pdfViewer()"> Resume </a></li>
-					<li ng-class="{active: isActive('/about')}"><a data-toggle="collapse" data-target=".navbar-collapse" href="about"> About me </a></li>
+					<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="" ng-click="pdfViewer()"> Resume </a></li>
+					<li ng-class="{active: isActive('/about')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="about"> About me </a></li>
 				</ul>
 			</div>
 		</div>
