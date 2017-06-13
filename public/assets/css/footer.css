@@ -50,10 +50,7 @@
 
 .footer ul li a {
 	padding: 0 0 5px 0;
-
-	/* This causes link to expand to div size and not text. */
-	/*display: block;*/
-	
+	/*display: block;*/  /* This causes link to expand to div size and not text. */
 	display: inline-block;
 	font-size: 13px;
 }

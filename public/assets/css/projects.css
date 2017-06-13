@@ -32,7 +32,6 @@
 }
 
 .description-parent {
-	/*text-align: center;*/
 	padding: 30px;
 }
 
@@ -43,6 +42,9 @@
 	margin: 0 auto;
 }
 
-.description-container p {
-	text-align: justify;
+@media (min-width: 768px) {
+	.description-container p {
+		text-align: justify;
+	}
 }
+	
