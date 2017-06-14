@@ -8,12 +8,6 @@
 
 /* Stack the profile picture on top on screen width < 768px . */
 @media (max-width: 768px) {
-
-	/* Needed because the height of the navbar changes when it collapses. */
-	.about-description {
-		padding-top: 1px;
-	}
-
 	.child-left img {
 		width: 100%;
 		max-width: 400px;
