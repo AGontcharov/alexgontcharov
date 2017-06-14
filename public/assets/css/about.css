@@ -23,9 +23,9 @@
 		padding: 0 30px;
 	}
 
-	.profile-description-parent {
+	/*.profile-description-parent {
 		text-align: center;
-	}
+	}*/
 
 	.profile-description {
 		display: inline-block;
@@ -75,9 +75,10 @@
 	}
 }
 
-.profile-description p {
-	width: 100%;
-	text-align: justify;
+@media (min-height: 768px) {
+	.profile-description p, .scuba-description p {
+		text-align: justify;
+	}
 }
 
 /* Need a wrapper to center a div horizontally */
@@ -88,10 +89,6 @@
 .scuba-description {
 	width: 100%;
 	max-width: 1100px;
-}
-
-.scuba-description p {
-	text-align: justify;
 }
 
 .scuba-img img {
