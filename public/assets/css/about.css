@@ -73,9 +73,7 @@
 		max-width: 400px;
 		border-radius: 50%;
 	}
-}
 
-@media (min-height: 768px) {
 	.profile-description p, .scuba-description p {
 		text-align: justify;
 	}
