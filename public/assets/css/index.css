@@ -12,10 +12,9 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-/* navbar adds space below without margin 0. */
-.navbar { 
-	margin: 0;
-	border: 0;
+/* navbar adds space below without margin 0. Not sure if true anymore. */
+.navbar {
+	/*margin: 0;*/
 }
 
 /* Increase size of the navbar on screens greater than 768px. */
