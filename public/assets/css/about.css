@@ -1,9 +1,9 @@
-.about-description {
-	text-align: center;
-}
-
 .about-description h1 {
-	color: #54697E;
+	/*color: #54697E;*/
+	text-align: center;
+	font-family: adobe-garamond-pro;
+	padding-top: 40px;
+	padding-bottom: 0px;
 }
 
 /* Stack the profile picture on top on screen width < 768px . */
@@ -22,10 +22,6 @@
 	.child-right {
 		padding: 0 30px;
 	}
-
-	/*.profile-description-parent {
-		text-align: center;
-	}*/
 
 	.profile-description {
 		display: inline-block;
