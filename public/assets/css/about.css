@@ -1,7 +1,13 @@
 .about-description h1 {
 	/*color: #54697E;*/
 	text-align: center;
-	font-family: adobe-garamond-pro;
+	/*text-transform: uppercase;*/
+	font-style: raleway;
+	font-weight: lighter;
+	/*font-family: adobe-garamond-pro;*/
+	/*font-family: raleway, helvetica, sans-serif;*/
+	/*font-size: 34px;*/
+	
 	padding-top: 40px;
 	padding-bottom: 0px;
 }
@@ -41,7 +47,7 @@
 	.table {
 		max-width: 1100px;
 		margin: 0 auto;
-		padding: 30px 0;
+		padding-bottom: 30px;
 
 		display: table;
 		table-layout: fixed;
