@@ -1,6 +1,6 @@
 body {
-    background: white;
-    padding-top: 50px; /* To prevent the fixed navbar overlaying other content */
+	background: white;
+	padding-top: 50px; /* To prevent the fixed navbar overlaying other content */
 }
 
 p {
@@ -21,18 +21,18 @@ h1, h2, h3 {
 /* Increase size of the navbar on screens greater than 768px. */
 @media (min-width: 768px) {
 	.navbar-brand,
-    .navbar-nav > li > a {
-    	line-height: 70px;
+	.navbar-nav > li > a {
+		line-height: 70px;
 		height: 70px;
 		padding-top: 0; 
 	}
 
 	.navbar-brand {
-		font-size: 22px;
+		font-size: 21px;
 	}
 
 	.navbar-nav li a {
-		font-size: 16px;
+		font-size: 15px;
 	}
 }
 
