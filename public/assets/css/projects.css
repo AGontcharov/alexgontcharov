@@ -16,6 +16,11 @@
 	padding: 40px 0px;
 }
 
+#test {
+	text-align: left;
+	font-size: 24px;
+}
+
 .all-projects h3 {
 	text-align: left;
 	color: #37c;
