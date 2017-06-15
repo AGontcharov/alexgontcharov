@@ -27,16 +27,6 @@
 	padding-top: 30px;
 }
 
-.description-container a {
-	text-decoration: none;
-	display: inline-block;
-}
-
-.description-container a:hover {
-	/*color: #33adff;*/
-	color: #ff8c1a;
-}
-
 .sub-heading {
 	color: #008000;
 	font-size: 18px;
