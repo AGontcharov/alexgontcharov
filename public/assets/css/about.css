@@ -6,6 +6,15 @@
 	border-bottom: 1px solid #DDDDDD;
 }
 
+.scuba-description a {
+	text-decoration: none;
+}
+
+.scuba-description a:hover {
+	/*color: #33adff;*/
+	color: #ff8c1a;
+}
+
 /* Stack the profile picture on top on screen width < 768px . */
 @media (max-width: 768px) {
 	.child-left img {

@@ -12,12 +12,13 @@
 	line-height: 0%;
 }
 
-.all-projects {
-	padding: 30px 0px;
+.all-projects .row {
+	padding: 40px 0px;
 }
 
 .all-projects h3 {
 	text-align: left;
+	color: #37c;
 }
 
 .project-image img {
@@ -28,10 +29,12 @@
 
 .description-container a {
 	text-decoration: none;
+	display: inline-block;
 }
 
 .description-container a:hover {
-	color: #008ae6;
+	/*color: #33adff;*/
+	color: #ff8c1a;
 }
 
 .sub-heading {
