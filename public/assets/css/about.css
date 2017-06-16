@@ -98,6 +98,7 @@
 #image-gallery {
 	width: 100%;
 	height: auto;
+	padding-bottom: 30px;
 }
 
 .no-padding {
