@@ -32,8 +32,10 @@
 	color: #5e9516;
 	font-size: 17px;
 	font-weight: bold;
-	/*line-height: 75%;*/
-	padding-bottom: 10px;
+	line-height: 85%;
+	white-space: nowrap;
+  	overflow: hidden;
+	padding-bottom: 10px;	
 }
 
 /* Width must be specified to center a div with margin: 0 auto; */
