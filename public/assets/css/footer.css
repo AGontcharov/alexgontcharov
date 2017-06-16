@@ -93,6 +93,13 @@
 	color: #fff;
 }
 
+.newsletter-box .btn:hover {
+	background: white;
+	color: #7F8C8D;
+	/*color: black;*/
+	/*border: 2px solid #BAC1C8;*/
+}
+
 .newsletter-box {
 	overflow: hidden;
 }
