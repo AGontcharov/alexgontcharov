@@ -48,19 +48,23 @@
 	transform: translate(-50%, -50%);
 }
 
+.image-wrapper img {
+	width: 100%;
+	max-width: 500px;
+}
+
 #ski {
-	height: 75vh;
+
 }
 
 #scuba {
-	width: 75vw;
+
 }
 
 #jacuzzi {
-	height: 75vh;
+
 }
 
 #soccer {
-	/*height: 75vh;*/
-	width: 75vw;
+
 }
