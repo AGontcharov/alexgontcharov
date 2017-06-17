@@ -19,8 +19,8 @@ app.controller('imageGalleryController', function($scope) {
 	function showSlide(n) {
 		var slides = document.getElementsByClassName("image-wrapper");
 
-		if (n > slides.length) {slideIndex = 0;}
- 		if (n < 1) {slideIndex = slides.length - 1;}
+		if (n > slides.length) slideIndex = 0;
+ 		if (n < 1) slideIndex = slides.length - 1;
 
  		/* Hide all the active images in the lightbox. */
 		for (i = 0; i < slides.length; i++) {
