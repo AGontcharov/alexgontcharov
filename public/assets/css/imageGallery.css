@@ -31,37 +31,24 @@
 	color: white;
 	font-weight: bold;
 	font-size: 35px;
+	opacity: 1;
 }
 
 .close:hover {
 	text-decoration: none;
 	color: #999;
-}
-
-.modal {
-	/*background: yellow;*/
-}
-
-.test {
-	width: 100%;
-	display: table;
-
-	/*height: 100%; Ruins exiting*/
-	/*background: red;*/
+	opacity: 1;
 }
 
 .image-wrapper {
-	display: none;
-	vertical-align: middle;	
-
-	/*background: pink;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 
 .image-wrapper img {
 	width: 100%;
 	max-width: 500px;
-
-	/* Need to vertically align as well. */
-	/*display: block;
-	margin: 0 auto;*/
 }

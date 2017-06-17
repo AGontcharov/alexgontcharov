@@ -26,8 +26,6 @@ app.controller('imageGalleryController', function($scope) {
 		for (i = 0; i < slides.length; i++) {
 			slides[i].style.display = "none";
 		}
-
-		if (i == 0) slides[n].style.display = "table-cell";
-		else slides[n].style.display = "block";
+		slides[n].style.display = "block";
 	}
 });
