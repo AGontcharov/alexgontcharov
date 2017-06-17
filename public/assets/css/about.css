@@ -1,6 +1,6 @@
 .about-heading {
-	padding-bottom: 20px;
-	font-family: SlabText,Garamond,Georgia,serif;
+	padding-bottom: 10px;
+	/*font-family: SlabText,Garamond,Georgia,serif;*/
 }
 
 .scuba-description a {
@@ -36,6 +36,7 @@
 		display: table;
 		table-layout: fixed;
 		margin: 0 auto;
+		padding-top: 20px; /*Without a header*/
 		padding-bottom: 10px;
 	}
 

@@ -1,12 +1,16 @@
 #project-heading {
+	/*background: #EDEFF1;*/
+	color: #555;
 	/*font-family: SlabText,Garamond,Georgia,serif;*/
-	padding-top: 30px;
+	padding-top: 50px;
+	padding-bottom: 30px;
 	/*font-family: raleway;*/
 	/*font-family: 'gotham rounded',sans-serif;*/
-	/*font-size: 30px;*/
-	/*font-weight: normal;*/
+	font-size: 36px;
+	font-weight: lighter;
 	/*letter-spacing: 1px;*/
 	/*border-bottom: 1px solid #BAC1C8;*/
+	/*text-transform: uppercase;*/
 }
 
 /*Links have more in built properties effects*/
