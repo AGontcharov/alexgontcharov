@@ -1,7 +1,6 @@
 #overview, .scuba-description-parent h3, #image-gallery h3{
 	/*font-family: adobe-garamond-pro;*/
 	/*font-family: raleway;*/
-	/*color: rgb(51, 119, 204);*/
 }
 
 .scuba-description a {
@@ -24,29 +23,20 @@
 		display: block;
 		margin: 0 auto;
 	}
-
-	.profile-description {
-		display: inline-block;
-	}
-
-	.profile-description p {
-		max-width: 1100px;
-	}
 }
 
 /* Shift the profile picture to the side of the description on screen width > 768px. */
 @media (min-width: 768px) {
 	.parent {
-		padding: 0 30px;
 		padding-top: 30px;
 	}
 
 	.table {
-		margin: 0 auto;
-		padding: 30px 0;
-
+		width: 100%;
 		display: table;
 		table-layout: fixed;
+		margin: 0 auto;
+		padding: 30px 0;
 	}
 
 	.child-left, .child-right {
@@ -57,11 +47,7 @@
 
 	/* Table cells have in built padding. */
 	.child-right {
-		padding-right: 0;
-	}
-
-	.child-left {
-		padding-left: 0;
+		padding-left: 0px;
 	}
 
 	/* Don't need to horizontally center img in table cell. */
@@ -75,11 +61,6 @@
 	.profile-description p, .scuba-description p {
 		text-align: justify;
 	}
-}
-
-/* Need a wrapper to center a div horizontally */
-.scuba-description-parent {
-	padding: 0 30px;
 }
 
 .scuba-description {

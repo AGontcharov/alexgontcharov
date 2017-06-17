@@ -41,28 +41,27 @@
 	color: #999;
 }
 
+.modal {
+	/*background: yellow;*/
+}
+
 .test {
-	/*text-align: center;*/
 	width: 100%;
+	height: 100%;
 	display: table;
 	background: red;
 }
 
 .image-wrapper {
-	/*width: 100%;*/
-	/*width: 300px;
-	height: 300px;*/
 	display: none;
 	vertical-align: middle;	
 
 	/*background: pink;*/
-	/*display: inline-block;*/
 }
 
 .image-wrapper img {
 	width: 100%;
 	max-width: 500px;
-	/*float: left;*/
 
 	/* Need to vertically align as well. */
 	/*display: block;
