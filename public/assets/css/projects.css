@@ -1,7 +1,8 @@
 #project-heading {
-	text-align: center;
-	color: black;
+	/*font-family: SlabText,Garamond,Georgia,serif;*/
 	padding-top: 30px;
+	font-family: raleway;
+	/*border-bottom: 1px solid #BAC1C8;*/
 }
 
 /*Links have more in built properties effects*/

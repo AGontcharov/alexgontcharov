@@ -1,5 +1,6 @@
 .about-heading {
 	padding-bottom: 20px;
+	font-family: SlabText,Garamond,Georgia,serif;
 }
 
 .scuba-description a {
@@ -9,6 +10,10 @@
 .scuba-description a:hover {
 	/*color: #33adff;*/
 	color: #ff8c1a;
+}
+
+.parent {
+	padding-top: 30px;
 }
 
 /* Stack the profile picture on top on screen width < 768px . */
@@ -26,10 +31,6 @@
 
 /* Shift the profile picture to the side of the description on screen width > 768px. */
 @media (min-width: 768px) {
-	.parent {
-		padding-top: 30px;
-	}
-
 	.table {
 		width: 100%;
 		display: table;
