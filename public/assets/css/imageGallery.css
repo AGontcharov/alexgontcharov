@@ -18,8 +18,13 @@
 	margin: 0 auto;
 }
 
-#image-gallery img:hover {
+#image-gallery img {
+	opacity: 0.8;
+}
+
+#image-gallery img:hover, #image-gallery img:active {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 1;
 }
 
 .close {
@@ -36,6 +41,27 @@
 	color: #999;
 }
 
+.prev, .next {
+	cursor: pointer;
+}
+
+.test {
+	text-align: center;
+}
+
 .image-wrapper {
 	display: none;
+	/*background: pink;*/
+	/*display: inline-block;*/
+
+}
+
+.image-wrapper img {
+	width: 100%;
+	max-width: 1000px;
+	/*float: left;*/
+
+	/* Need to vertically align as well. */
+	display: block;
+	margin: 0 auto;
 }
