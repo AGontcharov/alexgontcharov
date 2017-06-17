@@ -41,27 +41,30 @@
 	color: #999;
 }
 
-.prev, .next {
-	cursor: pointer;
-}
-
 .test {
-	text-align: center;
+	/*text-align: center;*/
+	width: 100%;
+	display: table;
+	background: red;
 }
 
 .image-wrapper {
+	/*width: 100%;*/
+	/*width: 300px;
+	height: 300px;*/
 	display: none;
+	vertical-align: middle;	
+
 	/*background: pink;*/
 	/*display: inline-block;*/
-
 }
 
 .image-wrapper img {
 	width: 100%;
-	max-width: 1000px;
+	max-width: 500px;
 	/*float: left;*/
 
 	/* Need to vertically align as well. */
-	display: block;
-	margin: 0 auto;
+	/*display: block;
+	margin: 0 auto;*/
 }

@@ -20,7 +20,7 @@ app.controller('imageGalleryController', function($scope) {
 		for (i = 0; i < slides.length; i++) {
 			slides[i].style.display = "none";
 		}
-		slides[n].style.display = "block";
+		slides[n].style.display = "table-cell";
 	}
 
 	function plusSlide(n) {
