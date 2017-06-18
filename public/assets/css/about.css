@@ -1,6 +1,12 @@
 .about-heading {
+	padding-top: 40px;
 	padding-bottom: 10px;
-	/*font-family: SlabText,Garamond,Georgia,serif;*/
+	font-size: 32px;
+	/*font-family: "Helvetica";*/ /*Same font as the default*/
+	/*font-family: "adobe-garamond-pro";*/
+	/*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
+	/*font-family: Geneva, Tahoma, Verdana, sans-serif;*/
+	font-family: Tahoma;
 }
 
 .scuba-description a {
@@ -36,8 +42,6 @@
 		display: table;
 		table-layout: fixed;
 		margin: 0 auto;
-		padding-top: 20px; /*Without a header*/
-		padding-bottom: 10px;
 	}
 
 	.child-left, .child-right {
