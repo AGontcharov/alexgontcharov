@@ -1,12 +1,8 @@
 .about-heading {
-	padding-top: 40px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	/*font-size: 30px;*/
+	padding-top: 30px;
 	padding-bottom: 10px;
-	font-size: 32px;
-	/*font-family: "Helvetica";*/ /*Same font as the default*/
-	/*font-family: "adobe-garamond-pro";*/
-	/*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
-	/*font-family: Geneva, Tahoma, Verdana, sans-serif;*/
-	font-family: Tahoma;
 }
 
 .scuba-description a {
