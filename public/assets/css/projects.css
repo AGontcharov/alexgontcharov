@@ -1,5 +1,9 @@
 #project-heading {
-
+	font-family: 'Lato', sans-serif;
+	font-size: 38px;
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
 
 /*Links have more in built properties effects*/
@@ -8,12 +12,7 @@
 	line-height: 0%;
 }
 
-.all-projects .row {
-	padding: 40px 0;
-}
-
 .all-projects h3 {
-	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: rgb(51, 119, 204);
 	letter-spacing: -0.5px;
 	text-align: left;
@@ -24,6 +23,7 @@
 	width: 100%;
 	height: 100%;
 	padding-top: 25px;
+	padding-bottom: 50px;
 }
 
 .sub-heading {

@@ -1,6 +1,5 @@
 body {
 	background: white;
-	/*padding-top: 50px;*/ /* To prevent the fixed navbar overlaying other content */
 }
 
 p {
@@ -11,11 +10,11 @@ p {
 
 h1, h2, h3 {
 	text-align: center;
+	color: #515151;
 }
 
-/* Somewhere margin was set to 15px and caused horizontal scrolling */
-.row {
-	/*margin: 0;*/
+h3 {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 /* navbar adds space below without margin 0. Not sure if true anymore. */
