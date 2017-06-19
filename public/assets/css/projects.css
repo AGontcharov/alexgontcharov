@@ -1,16 +1,5 @@
 #project-heading {
-	/*background: #EDEFF1;*/
-	color: #555;
-	/*font-family: SlabText,Garamond,Georgia,serif;*/
-	padding-top: 50px;
-	padding-bottom: 30px;
-	/*font-family: raleway;*/
-	/*font-family: 'gotham rounded',sans-serif;*/
-	font-size: 36px;
-	font-weight: lighter;
-	/*letter-spacing: 1px;*/
-	/*border-bottom: 1px solid #BAC1C8;*/
-	/*text-transform: uppercase;*/
+
 }
 
 /*Links have more in built properties effects*/
@@ -24,8 +13,10 @@
 }
 
 .all-projects h3 {
-	text-align: left;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: rgb(51, 119, 204);
+	letter-spacing: -0.5px;
+	text-align: left;
 	margin-bottom: 5px;
 }
 
@@ -36,7 +27,7 @@
 }
 
 .sub-heading {
-	/*color: #008000;*/
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: #5e9516;
 	font-size: 17px;
 	font-weight: bold;

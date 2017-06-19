@@ -1,7 +1,6 @@
 .about-heading {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
-	/*font-size: 30px;*/
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
 
@@ -38,6 +37,7 @@
 		display: table;
 		table-layout: fixed;
 		margin: 0 auto;
+		padding-bottom: 30px;
 	}
 
 	.child-left, .child-right {
