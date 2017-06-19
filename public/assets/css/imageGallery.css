@@ -38,8 +38,10 @@
 }
 
 .close:hover {
+	text-decoration: none;
 	/*color: #999;*/
 	color: white;
+	/*opacity: 1;*/		/*Makes this solid white. */
 }
 
 .prev, .next {
@@ -50,7 +52,6 @@
 	color: white;
 	font-size: 28px;
 	font-weight: 100;
-	opacity: 1;
 
 	padding: 0 10px;
 }
