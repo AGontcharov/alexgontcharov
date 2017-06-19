@@ -1,5 +1,6 @@
 #image-gallery {
-	width: 100%;
+	
+	width: inherit; 	/*Width 100% is causing the container/row to be cut short*/
 	height: auto;
 	padding-bottom: 30px;
 }
@@ -12,14 +13,11 @@
 #image-gallery img {
 	width: 100%;
 	max-width: 350px;
+	opacity: 0.8;
 
 	/* Center images horizontally. */
 	display: block;
 	margin: 0 auto;
-}
-
-#image-gallery img {
-	opacity: 0.8;
 }
 
 #image-gallery img:hover, #image-gallery img:active {
