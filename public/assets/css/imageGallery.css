@@ -1,5 +1,4 @@
-#image-gallery {
-	
+#thumbnail {	
 	width: inherit; 	/*Width 100% is causing the container/row to be cut short*/
 	height: auto;
 	padding-bottom: 30px;
@@ -10,7 +9,7 @@
 	margin: 0px!important;
 }
 
-#image-gallery img {
+#thumbnail img {
 	width: 100%;
 	max-width: 350px;
 	opacity: 0.8;
@@ -20,7 +19,7 @@
 	margin: 0 auto;
 }
 
-#image-gallery img:hover, #image-gallery img:active {
+#thumbnail img:hover, #thumbnail img:active {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	opacity: 1;
 }
@@ -35,12 +34,13 @@
 	font-size: 35px;
 	font-weight: 100;
 	opacity: 1;
+	padding: 5px;
 }
 
 .close:hover {
 	text-decoration: none;
-	/*color: #999;*/
 	color: white;
+	/*color: #999;*/
 	/*opacity: 1;*/		/*Makes this solid white. */
 }
 
@@ -49,14 +49,17 @@
 	text-decoration: none;
 	user-select: none;
 	position: absolute;
-	top: 50%;
+	top: 0;
 	color: white;
 	font-size: 28px;
 	font-weight: 100;
 
-	display: block;
-	/*height: 100vh;*/
-	padding: 10px;
+	display: block;	
+
+	/*padding: 50vh 0;*/	/*Almost works, scrolling at the bottom*/
+	padding-top: 50vh;
+	padding-top: calc(50vh - 40px);
+	padding-bottom: 50vh;
 }
 
 .prev:hover, .next:hover {
@@ -64,8 +67,16 @@
 	color: white;
 }
 
+.prev {
+	padding-left: 10px;
+	padding-right: 4%;
+}
+
 .next {
 	right: 0;
+	padding-right: 10px;
+	padding-left: 4%;
+	z-index: -1;
 }
 
 .image-wrapper {
