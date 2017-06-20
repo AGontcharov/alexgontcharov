@@ -1,5 +1,5 @@
 #thumbnail {	
-	width: inherit; 	/*Width 100% is causing the container/row to be cut short*/
+	width: inherit; 					/*Width 100% is causing the container/row to be cut short*/
 	height: auto;
 	padding-bottom: 30px;
 }
@@ -41,13 +41,12 @@
 	text-decoration: none;
 	color: white;
 	/*color: #999;*/
-	/*opacity: 1;*/		/*Makes this solid white. */
+	/*opacity: 1;*/						/*Makes this solid white. */
 }
 
 .prev, .next {
 	cursor: pointer;
-	text-decoration: none;
-	user-select: none;
+	text-decoration: none !important; 	/* Need to overwrite here. */
 	position: absolute;
 	top: 0;
 	color: white;
@@ -56,14 +55,21 @@
 
 	display: block;	
 
-	/*padding: 50vh 0;*/	/*Almost works, scrolling at the bottom*/
+	/*padding: 50vh 0;*/				/* Almost works, scrolling at the bottom */
 	padding-top: 50vh;
-	padding-top: calc(50vh - 40px);
+	padding-top: calc(50vh - 40px);		/* 40 seems to be the offsest magic number. */
 	padding-bottom: 50vh;
+
+
+	webkit-touch-callout: none;			/* IOS Safari. */
+	webkit-user-select: none;
+	moz-user-select: none;
+	ms-user-select: none;
+	user-select: none;
 }
 
-.prev:hover, .next:hover {
-	text-decoration: none;
+.prev:hover, .prev:visited, .next:hover, .next:visited {
+	/*text-decoration: none !important;*/
 	color: white;
 }
 
@@ -81,11 +87,11 @@
 
 .image-wrapper {
 	position: absolute;
+	z-index: -2;
 	top: 50%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
-	z-index: -2;
 }
 
 .image-wrapper img {
