@@ -18,8 +18,7 @@
 .project-image img {
 	width: 100%;
 	height: 100%;
-	padding-top: 25px;	/* Alings the top of image with the text. */
-	/*padding-bottom: 50px;*/
+	padding-top: 25px;		/* Alings the top of image with the text. */
 }
 
 .sub-heading {
