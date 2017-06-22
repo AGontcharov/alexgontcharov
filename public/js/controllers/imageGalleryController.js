@@ -3,9 +3,10 @@ var app = angular.module('myApp');
 app.controller('imageGalleryController', function($scope) {
 	var slideIndex = 0;
 
+	/* Get the current image from the thumbnail. */
 	$scope.getIndex = function(n) {
 		slideIndex = n;
-		setTimeout(function(){ document.getElementById("lightBox").focus(); }, 200);
+		setTimeout(function(){ document.getElementById("lightBox").focus(); }, 170);
 		showSlide(slideIndex);
 	}
 
@@ -14,9 +15,8 @@ app.controller('imageGalleryController', function($scope) {
 		showSlide(slideIndex += n);
 	}
 
+	/* Get the next or previous image using left/right arrow keys. */
 	$scope.nextSlide = function(event) {
-		console.log("You pressed " + event.keyCode);
-
 		if (event.key === "ArrowLeft") showSlide(slideIndex += -1);
 		if (event.key === "ArrowRight") showSlide(slideIndex += 1);
 	}

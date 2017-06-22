@@ -24,8 +24,10 @@
 	opacity: 1;
 }
 
-.modal {
-/*	background: #0f0f11;*/
+.modal-backdrop {
+   /*background-color: #0f0f11; */
+   background: rgb(15, 15, 17);
+   opacity: 0.8 !important;
 }
 
 .close {
@@ -44,7 +46,7 @@
 .close:hover {
 	text-decoration: none;
 	color: white !important;
-	opacity: 1;	/*Makes this solid white. */
+	opacity: 1;
 }
 
 .prev, .next {
