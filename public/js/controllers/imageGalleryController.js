@@ -6,7 +6,7 @@ app.controller('imageGalleryController', function($scope) {
 	/* Get the current image from the thumbnail. */
 	$scope.getIndex = function(n) {
 		slideIndex = n;
-		setTimeout(function(){ document.getElementById("lightBox").focus(); }, 170);
+		setTimeout(function(){ document.getElementById("lightBox").focus(); }, 200);
 		showSlide(slideIndex);
 	}
 
