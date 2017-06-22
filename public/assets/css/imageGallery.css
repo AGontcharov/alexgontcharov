@@ -87,7 +87,11 @@
 	z-index: -1;
 }
 
-.image-wrapper {
+#lightBox-container {
+	width: 90vw;
+	height: 90vh;
+	background: pink;
+
 	position: absolute;
 	z-index: -2;
 	top: 50%;
@@ -96,23 +100,52 @@
 	transform: translate(-50%, -50%);
 }
 
-.image-wrapper img {
+@media (max-width: 768px) {
+	#lightBox-container {
+		width: 100vw;
+		height: 90vh;
+	}
+}
+
+@media (max-width: 576px) {
+	#lightBox-container {
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+.image-wrapper {
+	/*width: 90vw;*/
+	/*height: 90vh;*/
+	/*background: pink;*/
+
+	/*display: inline-block;*/	
+	/*position: absolute;
+	z-index: -2;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);*/
+}
+
+#ski {
+	/*width: 100%;
+	max-width: 575px;*/
+	width: 100%;
+	/*height: inherit;*/
+}
+
+#scuba {
 	width: 100%;
 	max-width: 500px;
 }
 
-#ski {
-
-}
-
-#scuba {
-
-}
-
 #jacuzzi {
-
+	width: 100%;
+	max-width: 500px;
 }
 
 #soccer {
-
+	width: 100%;
+	max-width: 500px;
 }
