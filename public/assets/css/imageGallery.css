@@ -53,12 +53,12 @@
 	cursor: pointer;
 	/* Need to overwrite here. */
 	color: #ebebe0 !important;
-	font-size: 28px;
+	font-size: 40px;
 	font-weight: 100;
 
 	display: block;	
 	/* Off set for prev/next font size. */
-	padding-top: calc(50vh - 50px);
+	padding-top: calc(50vh - 57px);
 	padding-bottom: 50vh;
 
 	webkit-touch-callout: none;	/* IOS Safari. */
