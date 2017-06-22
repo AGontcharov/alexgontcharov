@@ -25,7 +25,6 @@
 }
 
 .modal-backdrop {
-   /*background-color: #0f0f11; */
    background: rgb(15, 15, 17);
    opacity: 0.8 !important;
 }
@@ -53,13 +52,14 @@
 	position: absolute;
 	top: 0;
 	cursor: pointer;
+	font-weight: 100;
+	font-size: 55px;
+	display: block;	
+	
 	/* Need to overwrite here. */
 	text-decoration: none !important;
 	color: #ebebe0 !important;
-	font-size: 55px;
-	font-weight: 100;
 
-	display: block;	
 	/* Off set for prev/next font size. */
 	padding-top: calc(50vh - 39px);
 	padding-bottom: calc(50vh - 39px);
@@ -87,18 +87,6 @@
 	z-index: -1;
 }
 
-#lightBox-container {
-	width: 90vw;
-	height: 90vh;
-
-	position: absolute;
-	z-index: -2;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-}
-
 .image-wrapper {
 	background: orange;
 }
@@ -107,37 +95,17 @@
 	max-width: 100%;
 	max-height: 90vh;
 
-	display: block;
-	margin: 0 auto;
+	/* Center image in the viewport. */
+	position: absolute;
+	z-index: -2;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 
 @media (max-width: 576px) {
-	#lightBox-container {
-		width: 100vw;
-		height: 100vh;
-	}
-
 	.image-wrapper img {
 		max-height: 100vh;
 	}
-}
-
-
-
-
-
-/* Aspect ratios, not sure what to use for. */
-.four-three {
-	width: 100%;
-	padding-top: 75%;
-}
-
-.three-two {
-	width: 100%;
-	padding-top: 66.66%;
-}
-
-.sixteen-nine {
-	width: 100%;
-	padding-top: 56.25%;
 }
