@@ -52,6 +52,7 @@
 	top: 0;
 	cursor: pointer;
 	/* Need to overwrite here. */
+	text-decoration: none !important;
 	color: #ebebe0 !important;
 	font-size: 40px;
 	font-weight: 100;
@@ -68,9 +69,8 @@
 	user-select: none;
 }
 
+/* This doesn't effect for whatever reason. */
 .prev:hover, .prev:visited, .next:hover, .next:visited {
-	text-decoration: none;
-	/*color: white !important;*/
 }
 
 .prev {
