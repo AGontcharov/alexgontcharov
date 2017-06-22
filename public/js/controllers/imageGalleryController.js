@@ -5,7 +5,7 @@ app.controller('imageGalleryController', function($scope) {
 
 	$scope.getIndex = function(n) {
 		slideIndex = n;
-		document.getElementById("lightBox").focus();
+		setTimeout(function(){ document.getElementById("lightBox").focus(); }, 200);
 		showSlide(slideIndex);
 	}
 
@@ -32,6 +32,7 @@ app.controller('imageGalleryController', function($scope) {
 		for (i = 0; i < slides.length; i++) {
 			slides[i].style.display = "none";
 		}
+		document.getElementById("lightBox").focus();
 		slides[slideIndex - 1].style.display = "block";
 	}
 });
