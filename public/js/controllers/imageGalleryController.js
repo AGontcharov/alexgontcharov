@@ -5,6 +5,7 @@ app.controller('imageGalleryController', function($scope) {
 
 	$scope.getIndex = function(n) {
 		slideIndex = n;
+		document.getElementById("lightBox").focus();
 		showSlide(slideIndex);
 	}
 
@@ -13,13 +14,19 @@ app.controller('imageGalleryController', function($scope) {
 		showSlide(slideIndex += n);
 	}
 
+	$scope.nextSlide = function(event) {
+		console.log("You pressed " + event.keyCode);
+
+		if (event.key === "ArrowLeft") showSlide(slideIndex += -1);
+		if (event.key === "ArrowRight") showSlide(slideIndex += 1);
+	}
+
 	/* Display the image. */
 	function showSlide(n) {
 		var slides = document.getElementsByClassName("image-wrapper");
 
 		if (n > slides.length) slideIndex = 1;
  		if (n < 1) slideIndex = slides.length;
-		console.log('Index is ' + slideIndex);
 
  		/* Hide all the active images in the lightbox. */
 		for (i = 0; i < slides.length; i++) {

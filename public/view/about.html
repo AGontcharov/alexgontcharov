@@ -39,7 +39,7 @@
 </div>
 <!-- /.container -->
 
-<div ng-controller="imageGalleryController">
+<div id="imageGallery" ng-controller="imageGalleryController">
 	<div class="container">
 		<div class="row" id="thumbnail">
 			<h3 class="about-subheading">My Passion</h3>
@@ -62,9 +62,10 @@
 	</div>
 	<!-- /.container -->
 
-	<div id="lightBox" class="modal fade">
+	<div id="lightBox" tabindex="0" ng-keydown="nextSlide($event)" class="modal fade">
 		<!-- The equivalent of a close X button. -->
 		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<!-- <button type="button" class="close" data-dismiss="modal">&#10006;</button> -->
 
 			<!-- Image 1 -->
 			<div class="image-wrapper">

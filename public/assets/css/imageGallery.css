@@ -47,18 +47,16 @@
 }
 
 .prev, .next {
-	cursor: pointer;
-	text-decoration: none !important;	/* Need to overwrite here. */
 	position: absolute;
 	top: 0;
+	cursor: pointer;
+	text-decoration: none !important;	/* Need to overwrite here. */
 	color: white !important;
 	font-size: 28px;
 	font-weight: 100;
 
 	display: block;	
-
 	/*padding: 50vh 0;*/				/* Almost works, scrolling at the bottom */
-	padding-top: 50vh;
 	padding-top: calc(50vh - 40px);		/* 40 seems to be the offsest magic number. */
 	padding-bottom: 50vh;
 
