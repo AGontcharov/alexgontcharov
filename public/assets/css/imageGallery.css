@@ -59,8 +59,8 @@
 
 	display: block;	
 	/* Off set for prev/next font size. */
-	padding-top: calc(50vh - 36px);
-	padding-bottom: calc(50vh - 35px);
+	padding-top: calc(50vh - 39px);
+	padding-bottom: calc(50vh - 39px);
 
 	webkit-touch-callout: none;	/* IOS Safari. */
 	webkit-user-select: none;
