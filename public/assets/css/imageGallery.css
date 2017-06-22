@@ -54,13 +54,13 @@
 	/* Need to overwrite here. */
 	text-decoration: none !important;
 	color: #ebebe0 !important;
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: 100;
 
 	display: block;	
 	/* Off set for prev/next font size. */
-	padding-top: calc(50vh - 57px);
-	padding-bottom: 50vh;
+	padding-top: calc(50vh - 36px);
+	padding-bottom: calc(50vh - 35px);
 
 	webkit-touch-callout: none;	/* IOS Safari. */
 	webkit-user-select: none;
