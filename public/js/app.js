@@ -35,16 +35,3 @@ myApp.config(function($routeProvider, $locationProvider) {
 	// use the HTML5 History API
 	$locationProvider.html5Mode(true);
 });
-
-
-myApp.controller('mainController', function($scope) {
-});
-
-myApp.controller('projectsController', function($scope) {
-});
-
-myApp.controller('resumeController', ['$scope', function($scope) {
-}]);
-
-myApp.controller('aboutController', function($scope) {
-});
