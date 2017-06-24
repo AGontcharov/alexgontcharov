@@ -1,4 +1,9 @@
+lib/
 node_modules/
 .DS_Store
 ToDoList
 reset.css
+helloWorld.js
+spec/helpers/*
+spec/jasmine_examples/*
+spec/helloWorldSpec.js
