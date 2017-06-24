@@ -1,6 +1,6 @@
-var app = angular.module('myApp');
-
-app.controller('imageGalleryController', function($scope) {
+angular
+	.module('myApp')
+	.controller('imageGalleryController', function($scope) {
 	var slideIndex = 0;
 
 	/* Get the current image from the thumbnail. */

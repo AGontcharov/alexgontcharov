@@ -4,34 +4,31 @@ myApp.config(function($routeProvider, $locationProvider) {
 	//$locationProvider.hashPrefix('');
 	$routeProvider
 
-	// route for home page
+	/* Route for home page */
 	.when('/', {
 		templateUrl: '/view/home.html',
-		controller: 'mainController',
 	})
 
-	// route for projects page
+	/* Route for projects page */
 	.when('/projects', {
 		templateUrl: '/view/projects.html',
-		controller: 'projectsController'
 	})
 
-	// route for resume page
+	/* Route for resume page */
 	.when('/resume', {
 		templateUrl: '/view/resume.html',
-		controller: 'resumeController',
 	})
 
-	// route for about me page
+	/* Route for about page */
 	.when('/about', {
 		templateUrl: '/view/about.html',
-		controller: 'aboutController'
 	})
 
+	/* Route for 404 */
 	.otherwise({
 		redirectTo: '/404'
 	});
 
-	// use the HTML5 History API
+	/* Use the HTML5 History API */
 	$locationProvider.html5Mode(true);
 });
