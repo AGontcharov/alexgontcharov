@@ -26,6 +26,13 @@ Open a broswer
 Go to: localhost:3000
 ```
 
+## Testing
+
+Linux & OS X:
+```sh
+npm test
+```
+
 ## Meta
 
 Alexander Gontcharov – alexander.goncharov@gmail.com
