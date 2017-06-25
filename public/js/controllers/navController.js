@@ -1,6 +1,6 @@
 angular
 	.module('myApp')
-	.controller('navController', function($scope, $window, $location) {
+	.controller('navController', ['$scope', '$window', '$location', function($scope, $window, $location) {
 	 
     $scope.isActive = function(viewLocation) { 
         return viewLocation === $location.path();
@@ -9,4 +9,4 @@ angular
     $scope.pdfViewer = function() {
     	$window.open("/resume.pdf");
     };
-});
+}]);

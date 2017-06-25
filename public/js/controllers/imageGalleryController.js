@@ -1,7 +1,8 @@
 angular
 	.module('myApp')
-	.controller('imageGalleryController', function($scope) {
-	var slideIndex = 0;
+	.controller('imageGalleryController', ['$scope', function($scope) {
+	
+	this.slideIndex = 0;
 
 	/* Get the current image from the thumbnail. */
 	$scope.getIndex = function(n) {
@@ -35,4 +36,4 @@ angular
 		document.getElementById("lightBox").focus();
 		slides[slideIndex - 1].style.display = "block";
 	}
-});
+}]);
