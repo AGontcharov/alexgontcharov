@@ -96,8 +96,6 @@
 .newsletter-box .btn:hover {
 	background: white;
 	color: #7F8C8D;
-	/*color: black;*/
-	/*border: 2px solid #BAC1C8;*/
 }
 
 .newsletter-box {
@@ -105,7 +103,6 @@
 }
 
 .bg-gray {
-	/*background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);*/
 	background-color: #DCDCDC;
 	box-shadow: 0 1px 0 #B4B3B3;
 }
@@ -150,6 +147,7 @@
 .social li a i {
 	font-size: 16px;
 	color: #EDEFF1 !important;
+	padding: 10px; /* Increase click radius. */
 }
 
 /* Colors of the companies on hover. */
