@@ -53,11 +53,8 @@
 	cursor: pointer;
 	font-weight: 100;
 	font-size: 55px;
-	display: block;	
-	
-	/* Need to overwrite here. Do I? */
+	display: block;		
 	color: #ebebe0;
-	/*text-decoration: none !important;*/
 
 	/* Off set for prev/next font size. */
 	padding-top: calc(50vh - 39px);
