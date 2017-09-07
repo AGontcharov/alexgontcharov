@@ -38,13 +38,17 @@
 	margin: 0 auto;
 }
 
-/* Justify text for screen width > 768px */
+/* Justify text for screen widths > 768px */
 @media (min-width: 768px) {
-	.description-container p { text-align: justify; }
+
+	.description-container p { 
+		text-align: justify; 
+	}
 }
 
-/* Reduce genetic algorithms image height on screen width > 1200px */
+/* Reduce genetic algorithms image height for screen widths > 1200px */
 @media (min-width: 1200px) {
+	
 	#genetic { 
 		max-width: 475px; 
 	}

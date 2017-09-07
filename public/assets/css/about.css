@@ -8,11 +8,10 @@
 }
 
 .scuba-description a:hover {
-	/*color: #33adff;*/
 	color: #ff8c1a;
 }
 
-/* Stack the profile picture on top on screen width < 768px . */
+/* Stack the profile picture on top on screen widths < 768px . */
 @media (max-width: 768px) {
 	.child-left img {
 		width: 100%;
@@ -25,7 +24,7 @@
 	}
 }
 
-/* Shift the profile picture to the side of the description on screen width > 768px. */
+/* Shift the profile picture to the side of the description on screen widths > 768px. */
 @media (min-width: 768px) {
 	.table {
 		width: 100%;
