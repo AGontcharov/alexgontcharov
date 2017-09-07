@@ -34,22 +34,8 @@
 	animation-fill-mode: forwards;
 }
 
-#eat {
-	animation-delay: 1s;
-}
-
-#sleep {
-	animation-delay: 2s;
-}
-
-#code {
-	animation-delay: 3s;
-}
-
-#scuba {
-	animation-delay: 4s;
-}
-
-#repeat {
-	animation-delay: 5s;
-}
+#eat { animation-delay: 1s; }
+#sleep { animation-delay: 2s; }
+#code { animation-delay: 3s; }
+#scuba { animation-delay: 4s; }
+#repeat { animation-delay: 5s; }
