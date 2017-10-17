@@ -1,4 +1,4 @@
-describe('contactController', function() {
+describe('Contact Controller', function() {
 	beforeEach(module('myApp'));
 
 	var scope, controller, $window;
@@ -12,12 +12,20 @@ describe('contactController', function() {
 	}));
 
 	describe('$scope.sendMail', function() {
-		it('should open a window and invoke mailto:', function() {
+
+		beforeEach(function() {
 			spyOn($window, 'open');
+		});
+
+		it('should call the window service', function() {
 			scope.sendMail();
 			expect($window.open).toHaveBeenCalled();
-			expect($window.open).toHaveBeenCalledWith('mailto:alexander.goncharov@gmail.com');
 			expect($window.open.calls.count()).toBe(1);
+		});
+
+		it("should call the window service with 'mailto:alexander.goncharov@gmail.com'", function() {
+			scope.sendMail();
+			expect($window.open).toHaveBeenCalledWith('mailto:alexander.goncharov@gmail.com');
 		});
 	});
 });

@@ -1,4 +1,4 @@
-describe('imageGalleryController', function() {
+describe('Image Gallery Controller', function() {
 	beforeEach(module('myApp'));
 
 	var controller, scope;

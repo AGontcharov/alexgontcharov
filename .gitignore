@@ -2,5 +2,3 @@ node_modules/
 .DS_Store
 ToDoList
 /public/assets/css/reset.css
-helloWorld.js
-spec/helloWorldSpec.js

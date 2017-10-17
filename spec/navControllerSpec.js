@@ -1,4 +1,4 @@
-describe('navController', function() {
+describe('Navbar Controller', function() {
 	beforeEach(module('myApp'));
 
 	var scope, controller, $window, $location;
@@ -12,27 +12,29 @@ describe('navController', function() {
 		});
 	}));
 
-	describe('$scope.isActive', function() {
-		it('should have a method to check if the path is active', function() {
+	describe('isActive', function() {
+		it('should check if the path is active', function() {
 			$location.path('/about');
 			expect($location.path()).toBe('/about');
-        	expect(scope.isActive('/about')).toBe(true);
-        	expect(scope.isActive('/projects')).toBe(false);
-
-			$location.path('/');
-			expect($location.path()).toBe('/');
-        	expect(scope.isActive('/')).toBe(true);
-        	expect(scope.isActive('/about')).toBe(false);        	
+        	expect(scope.isActive('/about')).toBe(true);        	
 		});
 	});
 
-	describe('$scope.pdfViewer', function() {
-		it('should open a new tab', function() {
+	describe('pdfViewer', function() {
+
+		beforeEach(function() {
 			spyOn($window, 'open');
+		});
+
+		it('should call the window service', function() {
 			scope.pdfViewer();
 			expect($window.open).toHaveBeenCalled();
-			expect($window.open).toHaveBeenCalledWith('/resume.pdf');
 			expect($window.open.calls.count()).toBe(1);
+		});
+
+		it("Should call the window service with '/resume.pdf' as argument", function() {
+			scope.pdfViewer();
+			expect($window.open).toHaveBeenCalledWith('/resume.pdf');
 		});
 	});
 });

@@ -4,6 +4,7 @@ var app = express();
 // Sets the root directory of the project
 app.use('/', express.static(__dirname + '/public'));
 
+// Send the index file on any get request
 app.get('*', function (req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
