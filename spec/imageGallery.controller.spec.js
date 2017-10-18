@@ -22,6 +22,6 @@ describe('Image Gallery Controller', function() {
 		it('should get image index', function() {
 			controller.slideIndex = 5;
 			expect(controller.slideIndex).toBe(5);
-		});	
+		});
 	});
 });

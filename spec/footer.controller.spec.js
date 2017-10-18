@@ -1,4 +1,4 @@
-describe('Contact Controller', function() {
+describe('Footer Controller', function() {
 	beforeEach(module('myApp'));
 
 	var scope, controller, $window;

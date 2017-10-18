@@ -2,9 +2,13 @@
 <div class="container">
 	<div class="row">
 		<div class="table">
+
+			<!-- Profile image -->
 			<div class="col-xs-12 col-lg-5 child-left">
 				<img src="/assets/img/profile.jpg" alt="Profile image">
 			</div>
+
+			<!-- My story -->
 			<div class="col-xs-12 col-lg-7 child-right">
 				<div class="profile-description">
 					<p>Recently graduated Software Engineer at the University of Guelph. I have a strong passion for coding, tangible projects, and reusable software. However, you'll often find me outdoor - on land or in the water.</p>
@@ -44,16 +48,16 @@
 		<div class="row" id="thumbnail">
 			<div class="col-lg-12">
 				<div class="col-xs-6 col-md-4 col-lg-3 no-padding">
-					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="getIndex(1)"><img src="/assets/img/skiJump.jpg"></a>
+					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="showImage(1)"><img src="/assets/img/skiJump.jpg"></a>
 				</div>
 				<div class="col-xs-6 col-md-4 col-lg-3 no-padding">
-					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="getIndex(2)"><img src="/assets/img/forceful.jpg"></a>
+					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="showImage(2)"><img src="/assets/img/forceful.jpg"></a>
 				</div>
 				<div class="col-xs-6 col-md-4 col-lg-3 no-padding">
-					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="getIndex(3)"><img src="/assets/img/jaccuzi.jpg"></a>
+					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="showImage(3)"><img src="/assets/img/jaccuzi.jpg"></a>
 				</div>
 				<div class="col-xs-6 col-md-4 col-lg-3 no-padding">
-					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="getIndex(4)"><img src="/assets/img/soccer.jpg"></a>
+					<a ng-href="#" data-toggle="modal" data-target="#lightBox" ng-click="showImage(4)"><img src="/assets/img/soccer.jpg"></a>
 				</div>
 			</div>
 		</div>
@@ -61,11 +65,12 @@
 	</div>
 	<!-- /.container -->
 
-	<div id="lightBox" tabindex="0" ng-keydown="nextSlide($event)" class="modal fade">
+	<div id="lightBox" tabindex="0" ng-keydown="onEventImage($event)" class="modal fade">
+		
 		<!-- The equivalent of a close X button. -->
 		<button type="button" class="close" data-dismiss="modal" title="Close">&#10005;</button>
-		<a ng-href="#" class="prev" ng-click="plusSlide(-1)" title="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-		<a ng-href="#" class="next" ng-click="plusSlide(1)" title="Next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		<a ng-href="#" class="prev" ng-click="nextImage(-1)" title="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		<a ng-href="#" class="next" ng-click="nextImage(1)" title="Next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
 
 			<!-- Image 1 -->
 			<div class="image-wrapper">

@@ -16,7 +16,7 @@ function config($routeProvider, $locationProvider) {
 	})
 	.when('/about', {
 		templateUrl: '/view/about.html',
-		controller: 'imageGallery'
+		controller: 'about'
 	})
 	.otherwise({
 		redirectTo: '/'
