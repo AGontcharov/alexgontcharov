@@ -9,6 +9,7 @@ app.get('*', function (req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
+// Create server and listen on port 3000
 app.listen(3000, function() {
 	console.log("Now listening on 3000.");
 });

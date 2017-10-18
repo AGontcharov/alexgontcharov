@@ -1,6 +1,8 @@
 angular
 	.module('myApp')
-	.controller('imageGalleryController', ['$scope', function($scope) {
+	.controller('imageGallery', ['$scope', imageGallery]);
+
+function imageGallery($scope) {
 	
 	this.slideIndex = 0;
 
@@ -36,4 +38,4 @@ angular
 		document.getElementById("lightBox").focus();
 		slides[slideIndex - 1].style.display = "block";
 	}
-}]);
+}

@@ -1,33 +1,27 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+angular
+	.module('myApp', ['ngRoute'])
+	.config(['$routeProvider', '$locationProvider', '$httpProvider', config]);
 
-myApp.config(function($routeProvider, $locationProvider) {
+function config($routeProvider, $locationProvider) {
 	$routeProvider
 
-	/* Route for home page */
 	.when('/', {
 		templateUrl: '/view/home.html',
 	})
-
-	/* Route for projects page */
 	.when('/projects', {
 		templateUrl: '/view/projects.html',
 	})
-
-	/* Route for resume page */
 	.when('/resume', {
 		templateUrl: '/view/resume.html',
 	})
-
-	/* Route for about page */
 	.when('/about', {
 		templateUrl: '/view/about.html',
+		controller: 'imageGallery'
 	})
-
-	/* Route for 404 */
 	.otherwise({
-		redirectTo: '/404'
+		redirectTo: '/'
 	});
 
 	/* Use the HTML5 History API */
 	$locationProvider.html5Mode(true);
-});
+}
