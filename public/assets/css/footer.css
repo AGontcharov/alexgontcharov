@@ -12,10 +12,6 @@
 	margin: 0;
 }
 
-.footer img {
-	max-width: 100%;
-}
-
 .footer h3 {
 	border-bottom: 1px solid #BAC1C8;
 	color: #54697E;
@@ -37,32 +33,11 @@
 	text-align: center;
 }
 
-.footer ul li a {
-	padding: 0 0 5px 0;
-	/*display: block;*/  /* This causes link to expand to div size and not text. */
+.github-links li a {
 	display: inline-block;
+	padding-bottom: 5px;
 	font-size: 13px;
-}
-
-.footer a {
-	color: #78828D
-}
-
-.supportLi h4 {
-	font-size: 20px;
-	font-weight: lighter;
-	line-height: normal;
-	margin-bottom: 0 !important;
-	padding-bottom: 0;
-}
-
-.newsletter-box input#appendedInputButton {
-	background: #FFFFFF;
-	display: inline-block;
-	float: left;
-	height: 30px;
-	clear: both;
-	width: 100%;
+	color: #78828D;
 }
 
 .newsletter-box .btn {
@@ -126,13 +101,14 @@
 }
 
 .social li a {
-	color: #EDEFF1;
+	color: #EDEFF1; /*color of the icons*/
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .social li a i {
 	font-size: 16px;
-	color: #EDEFF1 !important;
-	padding: 10px; /* Increase click radius. */
 }
 
 /* Colors of the companies on hover. */
