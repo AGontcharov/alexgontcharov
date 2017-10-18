@@ -1,14 +1,3 @@
-.full {
-    width: 50%;	
-}
-
-.gap {
-	height: 30px;
-	width: 100%;
-	clear: both;
-	display: block;
-}
-
 .footer {
 	background: #EDEFF1;
 	height: auto;
@@ -33,7 +22,7 @@
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 27px;
-	padding: 40px 0 10px;
+	padding: 20px 0 10px;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -77,10 +66,7 @@
 }
 
 .newsletter-box .btn {
-	/*border: medium none;*/
-	border-width: 1px;
-	border-color: #BAC1C8;
-
+	border: 1px solid #BAC1C8;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-o-border-radius: 3px;
@@ -124,7 +110,6 @@
 	text-align: center;
 	width: 36px;
 
-	/*webkite is Chrome & Safari, moz is Mozilla, ms is IE, and o is Opera*/
 	transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
@@ -179,12 +164,11 @@
 .footer-bottom {
 	background: #E3E3E3;
 	border-top: 1px solid #DDDDDD;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 15px 0;
 }
 
 .footer-bottom p {
 	font-size: 15px;
-	padding-top: 6px;
+	margin: 0;
 	text-align: center;
 }
