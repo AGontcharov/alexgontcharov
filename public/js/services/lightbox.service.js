@@ -14,14 +14,6 @@ function lightbox() {
     return service;
 
     /**
-    * Display the next or previous image
-    * @param {Number} n - The image index offset
-    */
-    function next(n) {
-        display(imageIndex += n);
-    }
-
-    /**
     * Display the lightbox with the associated image
     * @param {Number} n - The image index
     */
@@ -30,6 +22,14 @@ function lightbox() {
         setTimeout(function(){ document.getElementById("lightBox").focus(); }, 200);
         imageIndex = n;
         display(imageIndex);
+    }
+
+    /**
+    * Display the next or previous image
+    * @param {Number} n - The image index offset
+    */
+    function next(n) {
+        display(imageIndex += n);
     }
 
     /**

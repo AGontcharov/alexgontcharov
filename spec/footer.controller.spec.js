@@ -6,12 +6,12 @@ describe('Footer Controller', function() {
 	beforeEach(inject(function($controller, $rootScope, _$window_) {
 		scope = $rootScope.$new();
 		$window = _$window_;
-		controller = $controller('contactController', {
+		controller = $controller('footer', {
 			$scope: scope
 		});
 	}));
 
-	describe('$scope.sendMail', function() {
+	describe('sendMail', function() {
 
 		beforeEach(function() {
 			spyOn($window, 'open');

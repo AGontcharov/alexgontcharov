@@ -7,7 +7,7 @@ describe('Navbar Controller', function() {
 		scope = $rootScope.$new();
 		$location = _$location_;
 		$window = _$window_;
-		controller = $controller('navController', {
+		controller = $controller('navbar', {
 			$scope: scope
 		});
 	}));
@@ -32,7 +32,7 @@ describe('Navbar Controller', function() {
 			expect($window.open.calls.count()).toBe(1);
 		});
 
-		it("Should call the window service with '/resume.pdf' as argument", function() {
+		it("Should call the window service with '/resume.pdf'", function() {
 			scope.pdfViewer();
 			expect($window.open).toHaveBeenCalledWith('/resume.pdf');
 		});
