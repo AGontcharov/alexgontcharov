@@ -14,9 +14,9 @@
 	padding-bottom: 70px;
 }
 
-.project-image {
+/*.project-image {
 	text-align: center;
-}
+}*/
 
 .project-image img {
 	width: 100%;
@@ -30,12 +30,6 @@
 	font-size: 17px;
 	font-weight: bold;
 	padding-bottom: 15px;
-}
-
-/* Width must be specified to center a div with margin: 0 auto; */
-.description-container {
-	width: 100%;
-	margin: 0 auto;
 }
 
 /* Justify text for screen widths > 768px */
