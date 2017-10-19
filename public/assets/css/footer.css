@@ -40,7 +40,7 @@
 	color: #78828D;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	
 	/* -15 px to match top column */
 	#contact {

@@ -30,31 +30,28 @@
 
     <div id="container">
       
-      <!-- Navbar -->
-      <div id="header">
-        <nav class="navbar navbar-inverse navbar-static-top" ng-controller="navbar">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="/">Alexander Gontcharov</a>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li ng-class="{active: isActive('/')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="/">Home</a></li>
-                <li ng-class="{active: isActive('/projects')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="projects">Projects</a></li>
-                <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="" ng-click="pdfViewer()">Resume</a></li>
-                <li ng-class="{active: isActive('/about')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="about">About</a></li>
-              </ul>
-            </div>
+    <!-- Navbar -->
+      <nav class="navbar navbar-inverse navbar-static-top" ng-controller="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Alexander Gontcharov</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-        </nav>
-        <!--/.Navbar-->
-      </div>
-      <!-- ./header -->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li ng-class="{active: isActive('/')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="/">Home</a></li>
+              <li ng-class="{active: isActive('/projects')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="projects">Projects</a></li>
+              <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="" ng-click="pdfViewer()">Resume</a></li>
+              <li ng-class="{active: isActive('/about')}"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--/.Navbar-->
 
       <div id="body">
         <div ng-view="" autoscroll="true"></div>
@@ -66,9 +63,6 @@
       </div>
     </div>
     <!-- ./container -->
-
-    <footer>
-    </footer>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

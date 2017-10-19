@@ -47,7 +47,7 @@ h3 {
 	width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	#body {
 		padding-bottom: 516px;
 	}
@@ -56,16 +56,6 @@ h3 {
 		height: 516px;
 	}
 }
-
-/*@media (max-width: 576px) {
-	#body {
-		padding-bottom: 537px;
-	}
-
-	#footer {
-		height: 537px;
-	}
-}*/
 
 .navbar {
 	margin: 0; /* navbar adds space below without margin 0. */
