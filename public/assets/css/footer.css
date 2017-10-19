@@ -35,9 +35,17 @@
 
 .github-links li a {
 	display: inline-block;
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 	font-size: 13px;
 	color: #78828D;
+}
+
+@media (max-width: 768px) {
+	
+	/* -15 px to match top column */
+	#contact {
+		padding-top: 25px;
+	}
 }
 
 .newsletter-box .btn {
