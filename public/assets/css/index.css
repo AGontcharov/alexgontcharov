@@ -1,3 +1,9 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 body {
 	background: white;
 }
@@ -25,6 +31,41 @@ h3 {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
+#container {
+	min-height: 100%;
+	position: relative;
+}
+
+#body {
+	padding-bottom: 317px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	height: 317px;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	#body {
+		padding-bottom: 516px;
+	}
+
+	#footer {
+		height: 516px;
+	}
+}
+
+/*@media (max-width: 576px) {
+	#body {
+		padding-bottom: 537px;
+	}
+
+	#footer {
+		height: 537px;
+	}
+}*/
 
 .navbar {
 	margin: 0; /* navbar adds space below without margin 0. */
