@@ -67,8 +67,8 @@ h3 {
 @media (min-width: 768px) {
 	
 	.navbar-brand, .navbar-nav > li > a {
-		line-height: 59px;
-		height: 59px;
+		line-height: 60px;
+		height: 58px;
 		padding-top: 0; 
 	}
 
@@ -79,6 +79,7 @@ h3 {
 
 	.navbar-nav > li {
 		padding: 0 5px;
+		border-bottom: 2px solid #080808;
 	}
 
 	.navbar-nav  > li > a {
@@ -86,6 +87,6 @@ h3 {
 	}
 
 	.navbar .nav > .active {
-		border-bottom: 1px solid red;
+		border-bottom: 2px solid red;
 	}
 }
