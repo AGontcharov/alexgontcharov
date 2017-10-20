@@ -37,13 +37,13 @@ h3 {
 }
 
 #body {
-	padding-bottom: 317px;
+	padding-bottom: 314px;
 }
 
 #footer {
 	position: absolute;
 	bottom: 0;
-	height: 317px;
+	height: 314px;
 	width: 100%;
 }
 
@@ -59,7 +59,7 @@ h3 {
 }
 
 .navbar {
-	margin: 0; /* navbar adds space below without margin 0. */
+	margin: 0;
 	background: #080808;
 }
 
@@ -78,5 +78,9 @@ h3 {
 
 	.navbar-nav li a {
 		font-size: 15px;
+	}
+
+	.navbar .nav > .active > a {
+		border-bottom: 1px solid red;
 	}
 }
