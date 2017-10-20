@@ -42,7 +42,7 @@
 
 @media (max-width: 992px) {
 	
-	/* -15 px to match top column */
+	/* -15 px to match top column spacing */
 	#contact {
 		padding-top: 25px;
 	}
@@ -152,7 +152,7 @@
 }
 
 .footer-bottom p {
-	font-size: 15px;
+	font-size: 13px;
 	margin: 0;
 	padding: 0 15px;
 	text-align: center;
