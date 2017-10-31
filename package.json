@@ -20,10 +20,40 @@
     "angular": "^1.6.6",
     "angular-mocks": "^1.6.6",
     "angular-route": "^1.6.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^3.0.0",
     "jasmine": "^2.6.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
     "karma": "^1.7.0",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-spec-reporter": "0.0.31"
+  },
+  "jshintConfig": {
+    "eqeqeq": true,
+    "strict": "global",
+    "validthis": true,
+    "esversion": 6,
+    "jasmine": true,
+    "node": true,
+    "predef": [
+      "inject",
+      "protractor",
+      "browser",
+      "by",
+      "element",
+      "it",
+      "describe",
+      "beforeEach",
+      "afterEach"
+    ]
   }
 }
