@@ -6,15 +6,15 @@ var app = express();
 var path = '/public/app';
 
 if (process.env.NODE_ENV === 'production') {
-    path = '/public/src';
+  path = '/public/src';
 }
 
 // Server static content
 app.use('/', express.static(__dirname + path));
 
 // Send the index file on any get request
-app.get('*', function (req, res) {
-    res.sendFile(__dirname + path + '/index.html');
+app.get('*', function(req, res) {
+  res.sendFile(__dirname + path + '/index.html');
 });
 
 var port = process.env.PORT || 3000;

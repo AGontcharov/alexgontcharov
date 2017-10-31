@@ -17,15 +17,15 @@ jshintConfig.lookup = false;
 
 // Default
 gulp.task('default', function() {
-  gulp.start('styles', 'scripts', 'html', 'index');
+  gulp.start('styles', 'scripts', 'html', 'index', 'images', 'pdf');
 });
 
 // Linter
 gulp.task('lint', function() {
   return gulp.src([
-    'public/**/*.js',
+    'public/app/**/*.js',
     'server/**/*.js',
-    'test/**/*.js',
+    'spec/**/*.js',
     '*.js'
   ])
   .pipe(jshint(jshintConfig))
@@ -37,9 +37,9 @@ gulp.task('lint', function() {
 // Scripts
 gulp.task('scripts', function() {
   return gulp.src([
-    'public/app/app.module.js',
-    'public/app/**/*module.js',
-    'public/app/**/*.js'
+    'public/app/js/app.module.js',
+    'public/app/js/**/*module.js',
+    'public/app/js/**/*.js'
     ])
   .pipe(concat('app.min.js'))
   .pipe(uglify())
@@ -75,5 +75,17 @@ gulp.task('index', function() {
     'js': 'app.min.js',
     'css': 'app.min.css'
   }))
+  .pipe(gulp.dest('public/src'));
+});
+
+// Images
+gulp.task('images', function() {
+  return gulp.src('public/app/assets/img/*')
+  .pipe(gulp.dest('public/src/assets/img'));
+});
+
+// PDF
+gulp.task('pdf', function() {
+  return gulp.src('public/app/resume.pdf')
   .pipe(gulp.dest('public/src'));
 });
