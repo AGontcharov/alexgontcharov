@@ -17,7 +17,14 @@ jshintConfig.lookup = false;
 
 // Default
 gulp.task('default', function() {
-  gulp.start('styles', 'scripts', 'html', 'index', 'images', 'pdf');
+  gulp.start(
+    'styles',
+    'scripts',
+    'html',
+    'index',
+    'images',
+    'pdf'
+  );
 });
 
 // Linter
@@ -74,6 +81,10 @@ gulp.task('index', function() {
   .pipe(htmlreplace({
     'js': 'app.min.js',
     'css': 'app.min.css'
+  }))
+  .pipe(htmlMin({
+    collapseWhitespace: true,
+    removeComments: true
   }))
   .pipe(gulp.dest('public/src'));
 });
