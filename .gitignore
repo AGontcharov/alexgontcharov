@@ -1,5 +1,3 @@
 node_modules/
-.DS_Store
+dist/
 ToDoList
-/public/app/assets/css/reset.css
-/public/src/
