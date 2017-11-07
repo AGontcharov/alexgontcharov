@@ -3,7 +3,7 @@
 var express = require('express');
 
 var app = express();
-var path =  process.env.NODE_ENV ? '/public/app' : '/dist';
+var path =  process.env.NODE_ENV === 'production' ? '/dist' : '/public/app';
 
 // Server static content
 app.use('/', express.static(__dirname + path));
