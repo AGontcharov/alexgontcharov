@@ -1,5 +1,5 @@
-# [www.alexgontcharov.com](http://www.alexgontcharov.com)
-> My personal website
+# [Deprecated] [www.alexgontcharov.com](http://www.alexgontcharov.com)
+>  My personal website
 
 ## Installation
 
